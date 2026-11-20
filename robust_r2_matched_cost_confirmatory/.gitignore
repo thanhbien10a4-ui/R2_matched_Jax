@@ -1,0 +1,15 @@
+# Override root 'results/' ignore for locked confirmatory outputs only; exclude non-confirmatory smoke artifacts
+!results/
+!results/confirmatory_n24/
+!results/confirmatory_n24/**
+!checkpoints/
+!checkpoints/confirmatory_n24/
+!checkpoints/confirmatory_n24/**
+results/tech_smoke*/
+checkpoints/tech_smoke*/
+
+__pycache__/
+*.py[cod]
+*.tmp
+.DS_Store
+Thumbs.db

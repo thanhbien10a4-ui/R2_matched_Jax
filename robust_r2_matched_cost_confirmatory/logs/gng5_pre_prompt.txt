@@ -1,0 +1,16 @@
+Hãy đóng vai trò kiểm toán viên độc lập @gng5 (Sovereign Epistemic Gate) phản biện TIỀN NGHIỆM (read-only) toàn bộ thiết kế và mã nguồn của thí nghiệm xác nhận có chi phí giao dịch `cost_s = 0.0010` (`10 bps`) tại:
+`/home/user04/deephedging_jax_training_optimization/experiments/jax_ntbn_7notebooks_original_scale/robust_r2_matched_cost_confirmatory/`
+
+QUY TẮC TUYỆT ĐỐI:
+- CHỈ ĐỌC và chạy các lệnh kiểm tra không làm thay đổi trạng thái (như đọc mã, `dry_run`, hoặc kiểm tra bảng khóa nếu cần — tuyệt đối KHÔNG tạo hay mở dữ liệu test của `[5001..5040]`, KHÔNG mở `HOLD_EVAL`, KHÔNG sửa tệp, KHÔNG đổi `PAUSE_COORDINATOR`, KHÔNG nộp Slurm).
+
+Hãy kiểm tra trực tiếp trên tệp thật:
+1. **Cách ly PRNG liên hạt giống & Triệt tiêu lỗi B3 (`Val(s)/Train(s+1)`):** kiểm tra `cost_keys.py`, `DATA_AND_SEED_MANIFEST.json`, `cost_world_and_metrics.py`, `SEED_INDEPENDENCE_AUDIT.md`, và `robust_world.py`. Kiểm tra xem `np.random.seed` toàn cục có được cô lập không, có bất kỳ rò rỉ hoặc trùng lặp khóa nào với toàn kho lịch sử (`4001..4040`, `701..710`, `HOLD_EVAL`, `3101..3403`, `3999`) hay không, và nhận xét cấu trúc ghép cặp trong cùng seed `s` (`init_policy`, `fixed_020`, `conf_test_shared_dW`) có hợp lý hay còn khe hở phương pháp nào không.
+2. **Kế toán chi phí & dòng thời gian vị thế (`c_s = 0.0010`):** kiểm tra `cost_world_and_metrics.py`, `cost_train.py`, `COST_ACCOUNTING_AUDIT.md`, `r3_models.py`, `bc_models.py`. Xác minh giao dịch bước `j=0..19`, không có phí tất toán tại `j=20`, không trừ phí 2 lần, công thức `gross - cost == net`, phân biệt `turnover` vs `immobility_rate` vs quy mô lệnh, và chứng minh `cost_s = 0.0010` thực sự đi xuyên cả `train`, `best_val` selection, lẫn `conf_test`.
+3. **Ngân sách, đối xứng & chọn bản lưu:** kiểm tra `cost_design.py`, `cost_train.py`, `lr_schedule.py`. Xác minh đối xứng `6,762` tham số policy, `31,200` bước (`3,993,600` lượt đường), `Cosine LR Decay`, reload parity `< 1e-6`, và cách ly tạo `conf_test` chỉ sau khi đóng `best_val` & `ep200`.
+4. **Giả thuyết kép Berger IUT, `N = 24`, bảng công suất `R1..R9`, & chính sách `--seed-offset`:** kiểm tra `COST_CONFIRMATORY_DESIGN_LOCK.md`, `cost_stats.py`, `cost_run.py`, `scripts/cost_power_table.py`, `SAMPLE_SIZE_SENSITIVITY_COST.csv`, `tests/test_cost_conf_suite.py`. Rà kỹ xem có lỗi logic, bug ngầm, rủi ro hiệu năng/OOM/timeout trên `8 CPU 0 GPU 05:30:00`, hay lỗ hổng nào cần vá TRƯỚC khi khóa `SOURCE_SHA256SUMS.txt` và nộp Slurm hay không.
+
+Xuất kết quả gồm:
+- Danh sách điểm ĐẠT đã xác minh trên mã thật.
+- Mọi lỗi, rủi ro hoặc khe hở phân loại rõ `[BLOCKER / HIGH / MEDIUM / LOW / NOTE]` kèm file & dòng cụ thể cần sửa trước khi chạy.
+- Phán quyết tiền nghiệm: `GO` hay `CONDITIONAL_GO` hay `NO_GO`.

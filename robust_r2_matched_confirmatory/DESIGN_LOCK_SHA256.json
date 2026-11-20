@@ -1,0 +1,58 @@
+{
+  "lock_status": "LOCKED_PRE_RUN",
+  "n_seeds": 24,
+  "seeds": [
+    4001,
+    4002,
+    4003,
+    4004,
+    4005,
+    4006,
+    4007,
+    4008,
+    4009,
+    4010,
+    4011,
+    4012,
+    4013,
+    4014,
+    4015,
+    4016,
+    4017,
+    4018,
+    4019,
+    4020,
+    4021,
+    4022,
+    4023,
+    4024
+  ],
+  "cost_s": 0.0,
+  "source_sha256": {
+    "robust_r2_matched_confirmatory/R2_MATCHED_CONFIRMATORY_DESIGN_LOCK.md": "2595caf85d7f3d6197f2d6279fec36989c46ca93233d2480515e4228b1ac0c89",
+    "robust_r2_matched_confirmatory/SAMPLE_SIZE_SENSITIVITY.csv": "564c441de11a56272aad8e5d004f1d255a5b74558561a6ef6cd620e5cf88949d",
+    "robust_r2_matched_confirmatory/conf_keys.py": "9281e5328a8037af6349a75bfe65d6668fe1cbd24e75c4fc484af05edc835e21",
+    "robust_r2_matched_confirmatory/conf_design.py": "a1e4f1bcda7d6e65a25ce284ec54defc677e98a7bf0be3cf32a5ff6d6c7c54cd",
+    "robust_r2_matched_confirmatory/conf_stats.py": "05f7184378772fd78024a85fde662084ee020afed9d38841a79102ee03fa574b",
+    "robust_r2_matched_confirmatory/conf_run.py": "9374623adfa0533307a9ca988bbecdde24ca342c05b9c2288add37f0404e6c5d",
+    "robust_r2_matched_confirmatory/scripts/sample_size_and_power.py": "e5766e020a0caa07c4a8889c45b2b51ca42033f1225e89338b0eb80b341822b7",
+    "robust_r2_matched_confirmatory/tests/test_conf_suite.py": "6f6dd730edc89534cbd92f739da63ffc11e1c82baf16b925c8c97fa36a98bc21",
+    "robust_r2_matched_confirmatory/DATA_AND_SEED_PLAN.json": "796adea1a6223359e59d54c0110ad30c5c015ecc1c7f310af651bd18a988833c",
+    "robust_r3_lr_stability/lr_train.py": "2759f098522467f5809cb8d00386ab2d6bad16589dcb93cbbc38fc540fcc39f3",
+    "robust_r3_lr_stability/lr_schedule.py": "7d856f2adf2fc89b7d7d8e9364f846bba5f9fad64cec5e4a5db593e56c0b519e",
+    "robust_r3_lr_stability/lr_keys.py": "586049076d5cfc3865842a31ae3fc9e14b890a96d0e5976be9b4e3a7d2c82d6b",
+    "robust_r3_budget_control/bc_models.py": "4f3c5155e21c1bf0dce84661b85935b5f3838b88641691cccf4e0f5eb7fc3f56",
+    "robust_r3_dev/r3_models.py": "cf391002e10af3e785f5e1189ac5999189603840f39f2eeee31abe1732c0799e",
+    "robust_r3_dev/r3_metrics.py": "601795002691fef55c84da447fac1cd47b4da96584349cb6e75605f2a4552a2f",
+    "robust_r3_dev/r3_train.py": "3b5dd6b8e349f877baaec0cb48cfeb444b0e3c2a85d5151b74e1a5d2609f7aa6",
+    "robust_r3_dev/r3_keys.py": "b02bf07e0191039a3885f2bad47475a3d611a8ee4cd13d1f63f8fff3fa04815a"
+  },
+  "environment": {
+    "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+    "jax_version": "0.12.0.1",
+    "devices": [
+      "cpu:0"
+    ],
+    "platform": "Windows-11-10.0.26300-SP0"
+  }
+}

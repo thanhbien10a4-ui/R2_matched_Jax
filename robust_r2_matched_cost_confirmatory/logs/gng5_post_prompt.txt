@@ -1,0 +1,18 @@
+Hãy đóng vai trò kiểm toán viên độc lập @gng5 (Sovereign Epistemic Gate) kiểm toán HẬU NGHIỆM (read-only) toàn bộ kết quả Job `16914` tại:
+`/home/user04/deephedging_jax_training_optimization/experiments/jax_ntbn_7notebooks_original_scale/robust_r2_matched_cost_confirmatory/`
+
+QUY TẮC TUYỆT ĐỐI:
+- CHỈ ĐỌC và chạy lệnh đối soát không làm thay đổi trạng thái (không sửa tệp, không mở `HOLD_EVAL`, không tạo dữ liệu `[5025..5040]`, không đụng `PAUSE_COORDINATOR`).
+
+Hãy kiểm tra trực tiếp trên các tệp thật vừa sinh trên máy chủ:
+1. **Toàn vẹn thực thi & Niêm phong (`SOURCE_SHA256SUMS.txt`, `logs/slurm_cost10_n24_16914.log`, `SEED_LEDGER.json`, `COST_CONFIRMATORY_STATS_SUMMARY.json`, `checkpoints/confirmatory_n24/`):**
+   - Xác minh `24/24` seed `[5001..5024]` (`48/48` lượt chạy), đúng `31,200` bước/lượt (`3,993,600` đường), `0` lỗi, `48/48` `best_val.pkl` + `48/48` `final_with_opt.pkl`, tái nạp khớp bộ nhớ (`reload parity < 1e-6`), `0` dấu vết `[5025..5040]`, và `408/408` mã băm tập dữ liệu hoàn toàn rời nhau (triệt tiêu triệt để lỗi `Val(s)/Train(s+1)` kiểu B3).
+2. **Kiểm toán thống kê độc lập từ CSV thô (`PAIRED_COST_CONFIRMATORY.csv`, `RESULTS_COST_CONFIRMATORY_FULL_PRECISION.csv`, `STATS_RECOMPUTED_CLI.json`, `POSTRUN_AUDIT_TABLES.json`):**
+   - Đối chiếu từng bit số liệu `H1a` (`ΔHE_030` ròng ở `best_val`), `H1b` (`ΔOCE_020` ròng ở `best_val`, `ε = +0.00010`), `p_IUT`, KTC `95%`, kiểm tra nhạy `ep200`, `Leave-One-Out`, Sign test, Wilcoxon chính xác, và độ lệch `skewness/excess_kurtosis` (đặc biệt các ngoại lệ như `5004` và `5024` — thử kiểm tra kết quả khi loại `5024` xem quyết định IUT có đổi không).
+3. **Kế toán phí `10 bps` & Phân tách cơ chế giao dịch (Gross vs Net, Turnover vs Frequency):**
+   - Kiểm chứng đẳng thức `mean_gross_gains - mean_cost == mean_gains` trên toàn bộ `24 × 2 × 2 × 6 = 576` dòng đánh giá, không trừ phí hai lần, `train_cost_means > 0`, `val_cost_mean_020 > 0`.
+   - Kiểm tra tách bạch `turnover`, `mean_cost`, `active_steps_gt1e5`, `immobility_rate` (`< 1e-5`, `< 1e-4`, `< 1e-3`), `mean_trade_size_active_pooled` vs `pathwise`, và `max_abs_delta` / `p99_abs_delta`: giải thích cơ chế thật sự khiến `R2_DECAY` giảm `turnover` và `cost` (giảm quy mô lệnh hay bất động hoàn toàn?).
+4. **Rà soát đánh đổi bất lợi & đối chiếu trung thực với `cost_s = 0.0` (`Job 16911`):**
+   - Chỉ ra rõ kịch bản nào kém hơn (như `fixed_015`), seed nào bất lợi (`5004` trên `HE_030`, `5013` trên `ep200`, các seed tăng `cost`/`turnover`), và giới hạn hiệu lực (chỉ áp dụng ở `10 bps` trên mô hình thị trường này, không suy diễn sang `NTBN`, không hồi tố B3).
+
+Xuất biên bản phản biện hậu nghiệm gồm: bảng đối soát số liệu tự kiểm chứng, các điểm ĐẠT / LƯU Ý phân cấp (`CRITICAL / HIGH / MEDIUM / LOW / NOTE`), và phán quyết kiểm toán hậu nghiệm (`CONFIRMED_PASS` / `CONDITIONAL` / `REJECT`).

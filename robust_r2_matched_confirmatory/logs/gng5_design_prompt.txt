@@ -1,0 +1,21 @@
+Bối cảnh: Bạn là @gng5 (chạy bằng một phiên mô hình đơn lẻ gemini-4-argon-high). Nhiệm vụ CHỈ ĐỌC (READ-ONLY) của bạn là phản biện nghiêm ngặt hồ sơ thiết kế, mã nguồn, tính cỡ mẫu và kiểm thử cho thí nghiệm xác nhận độc lập tại thư mục:
+`/home/user04/deephedging_jax_training_optimization/experiments/jax_ntbn_7notebooks_original_scale/robust_r2_matched_confirmatory`
+
+CÁC RÀNG BUỘC CỨNG (BẮT BUỘC TUÂN THỦ):
+- KHÔNG sửa, ghi đè hay xóa bất kỳ tệp nào (không viết tệp mới).
+- KHÔNG nộp Slurm job (`sbatch`), KHÔNG huấn luyện hay mô phỏng tập kiểm tra `[4001..4040]`, KHÔNG mở `HOLD_EVAL`.
+- KHÔNG chạm vào `PAUSE_COORDINATOR` hay job đang chờ `16909`.
+
+CÁC TỆP CẦN KIỂM TRA TRỰC TIẾP TRONG THƯ MỤC TRÊN (VÀ ĐỐI CHIẾU NGUỒN GỐC KHI CẦN):
+1. `DEVELOPMENT_ERRATA.md` (đối chiếu 5 điểm 1a-1e với `../robust_r3_lr_stability/` và `PAUSE_COORDINATOR` thực tế).
+2. `R2_MATCHED_CONFIRMATORY_DESIGN_DRAFT.md` & `dev_strata_summary.json` (tách lớp `BC`, `DIAG`, `LR_STAB`; phân biệt `R3`, `R2_matched`, `DECAY`; định nghĩa `HE = std(gains, ddof=0)` và `hedged_oce_y_nom`; quy tắc chọn `best_val` của A vs R2; Berger IUT ở `alpha=0.025` một phía; giới hạn `cost_s=0.0`).
+3. `scripts/sample_size_and_power.py` & `SAMPLE_SIZE_SENSITIVITY.csv` (kiểm tra công thức `t_cdf`, `t_ppf`, noncentral-t, MC bivariate, khuyến nghị `N=24` vs phương án `N=16` và kịch bản stress `R6/R7/R8`).
+4. `conf_keys.py` & `DATA_AND_SEED_PLAN.json` (cách ly `2167` khóa lịch sử vs `861` khóa mới; trạng thái `[4001..4040]` và `HOLD_EVAL`).
+5. `RESOURCE_ESTIMATE.md` & `slurm_confirmatory_template.sbatch` (tính từ phép đo Job `16908`, không ngoại suy GPU, cấu hình hàng đợi Slurm).
+6. `conf_design.py`, `conf_stats.py`, `conf_run.py`, `tests/test_conf_suite.py` (tính đúng đắn thống kê, sổ cái missing/NaN, guard không chạy nhầm, tương thích hàm gốc).
+
+YÊU CẦU TRẢ LỜI RÕ RÀNG:
+1. **Phán quyết thiết kế (`PASS` / `CONDITIONAL PASS` / `REVISE REQUIRED`)**.
+2. **Các điểm mạnh đã khóa chặt**.
+3. **Danh sách lỗi, lỗ hổng kỹ thuật, mâu thuẫn số liệu hoặc điểm yếu thống kê (nếu có)** kèm file/dòng cụ thể và cách khắc phục bắt buộc trước khi chạy đợt xác nhận sau này.
+4. **Đánh giá riêng về lựa chọn cỡ mẫu (`N=24` vs `N=16`) và tính hợp lệ của Berger IUT ở `alpha=0.025`**.

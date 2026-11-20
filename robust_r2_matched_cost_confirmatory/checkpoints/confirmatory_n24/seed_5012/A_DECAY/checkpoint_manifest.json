@@ -1,0 +1,11 @@
+{
+  "config_name": "A_DECAY",
+  "seed_label": 5012,
+  "cost_s": 0.001,
+  "best_epoch": 164,
+  "best_epoch_if_val020_only": 164,
+  "best_ckpt_file": "best_val.pkl",
+  "final_with_opt_file": "final_with_opt.pkl",
+  "actual_update_steps": 31200,
+  "actual_paths_processed": 3993600
+}

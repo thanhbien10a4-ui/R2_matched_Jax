@@ -1,0 +1,197 @@
+{
+  "seed_records": [
+    {
+      "seed": 4001,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 264.27298617362976,
+      "R2_DECAY_time_sec": 300.8651306629181,
+      "A_best_epoch": 195,
+      "R2_best_epoch": 188
+    },
+    {
+      "seed": 4002,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 263.501850605011,
+      "R2_DECAY_time_sec": 300.50296092033386,
+      "A_best_epoch": 132,
+      "R2_best_epoch": 116
+    },
+    {
+      "seed": 4003,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 263.86520171165466,
+      "R2_DECAY_time_sec": 301.0445411205292,
+      "A_best_epoch": 196,
+      "R2_best_epoch": 147
+    },
+    {
+      "seed": 4004,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 263.9873778820038,
+      "R2_DECAY_time_sec": 301.05623602867126,
+      "A_best_epoch": 76,
+      "R2_best_epoch": 194
+    },
+    {
+      "seed": 4005,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 264.1673901081085,
+      "R2_DECAY_time_sec": 300.6974587440491,
+      "A_best_epoch": 141,
+      "R2_best_epoch": 170
+    },
+    {
+      "seed": 4006,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 262.9946529865265,
+      "R2_DECAY_time_sec": 301.81461787223816,
+      "A_best_epoch": 193,
+      "R2_best_epoch": 193
+    },
+    {
+      "seed": 4007,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 262.61021399497986,
+      "R2_DECAY_time_sec": 300.9459285736084,
+      "A_best_epoch": 105,
+      "R2_best_epoch": 187
+    },
+    {
+      "seed": 4008,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 264.31942081451416,
+      "R2_DECAY_time_sec": 300.4029929637909,
+      "A_best_epoch": 186,
+      "R2_best_epoch": 189
+    },
+    {
+      "seed": 4009,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 262.7304413318634,
+      "R2_DECAY_time_sec": 300.6673424243927,
+      "A_best_epoch": 165,
+      "R2_best_epoch": 197
+    },
+    {
+      "seed": 4010,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 263.4194293022156,
+      "R2_DECAY_time_sec": 300.34901428222656,
+      "A_best_epoch": 42,
+      "R2_best_epoch": 194
+    },
+    {
+      "seed": 4011,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 262.95079612731934,
+      "R2_DECAY_time_sec": 301.25281977653503,
+      "A_best_epoch": 150,
+      "R2_best_epoch": 158
+    },
+    {
+      "seed": 4012,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 263.7497777938843,
+      "R2_DECAY_time_sec": 301.4494426250458,
+      "A_best_epoch": 191,
+      "R2_best_epoch": 195
+    },
+    {
+      "seed": 4013,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 262.7205820083618,
+      "R2_DECAY_time_sec": 300.79268169403076,
+      "A_best_epoch": 146,
+      "R2_best_epoch": 134
+    },
+    {
+      "seed": 4014,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 262.878041267395,
+      "R2_DECAY_time_sec": 300.6817750930786,
+      "A_best_epoch": 199,
+      "R2_best_epoch": 160
+    },
+    {
+      "seed": 4015,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 263.3067262172699,
+      "R2_DECAY_time_sec": 299.25499987602234,
+      "A_best_epoch": 188,
+      "R2_best_epoch": 195
+    },
+    {
+      "seed": 4016,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 262.1356523036957,
+      "R2_DECAY_time_sec": 299.50159978866577,
+      "A_best_epoch": 198,
+      "R2_best_epoch": 180
+    },
+    {
+      "seed": 4017,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 263.2849624156952,
+      "R2_DECAY_time_sec": 299.255393743515,
+      "A_best_epoch": 200,
+      "R2_best_epoch": 174
+    },
+    {
+      "seed": 4018,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 267.1807086467743,
+      "R2_DECAY_time_sec": 304.26396918296814,
+      "A_best_epoch": 162,
+      "R2_best_epoch": 162
+    },
+    {
+      "seed": 4019,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 267.4788873195648,
+      "R2_DECAY_time_sec": 305.14038157463074,
+      "A_best_epoch": 137,
+      "R2_best_epoch": 197
+    },
+    {
+      "seed": 4020,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 266.6056990623474,
+      "R2_DECAY_time_sec": 304.56240010261536,
+      "A_best_epoch": 200,
+      "R2_best_epoch": 199
+    },
+    {
+      "seed": 4021,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 268.4110085964203,
+      "R2_DECAY_time_sec": 309.4428553581238,
+      "A_best_epoch": 186,
+      "R2_best_epoch": 145
+    },
+    {
+      "seed": 4022,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 270.6104428768158,
+      "R2_DECAY_time_sec": 309.14643478393555,
+      "A_best_epoch": 61,
+      "R2_best_epoch": 184
+    },
+    {
+      "seed": 4023,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 268.68714666366577,
+      "R2_DECAY_time_sec": 306.432493686676,
+      "A_best_epoch": 151,
+      "R2_best_epoch": 200
+    },
+    {
+      "seed": 4024,
+      "status": "COMPLETED",
+      "A_DECAY_time_sec": 267.5215873718262,
+      "R2_DECAY_time_sec": 307.20627999305725,
+      "A_best_epoch": 145,
+      "R2_best_epoch": 182
+    }
+  ],
+  "failed_seeds": []
+}

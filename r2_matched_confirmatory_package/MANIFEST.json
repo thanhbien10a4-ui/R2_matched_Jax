@@ -1,0 +1,2855 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-11-20T06:00:44Z",
+  "package_name": "r2_matched_confirmatory_package",
+  "target_github_repo": "thanhbien10a4-ui/deephedging-jax-ntbn-7groups",
+  "base_commit_main": "a32e66386d4deb7841c66161ae05e5437537833f",
+  "external_simulator_upstream": {
+    "repo": "https://github.com/NdQuan127/deephedging-jax.git",
+    "commit": "f21c6e42f4cae79864df57b2893f39dd484f37ff",
+    "license": "GPL-3.0"
+  },
+  "experiments": [
+    {
+      "dir": "robust_r2_matched_confirmatory",
+      "job_id": 16911,
+      "cost_s": 0.0,
+      "seeds": "4001..4024",
+      "n_seeds": 24,
+      "verdict": "PASS_CONFIRMATORY_IUT"
+    },
+    {
+      "dir": "robust_r2_matched_cost_confirmatory",
+      "job_id": 16914,
+      "cost_s": 0.001,
+      "seeds": "5001..5024",
+      "n_seeds": 24,
+      "verdict": "PASS_CONFIRMATORY_IUT"
+    }
+  ],
+  "excluded_from_package": [
+    "HOLD_EVAL (sealed unseen evaluation set)",
+    "Reserved unused seeds [4025..4040] and [5025..5040]",
+    "Non-confirmatory tech_smoke artifacts (seed 3999 / 5999)",
+    "__pycache__ / SSH keys / tokens / credentials"
+  ],
+  "summary": {
+    "total_hashed_files": 401,
+    "total_bytes_excl_self_meta": 15810088,
+    "max_single_file_bytes": 344753,
+    "self_meta_omitted_from_sha256": [
+      "r2_matched_confirmatory_package/FILE_INDEX.md",
+      "r2_matched_confirmatory_package/MANIFEST.json",
+      "r2_matched_confirmatory_package/SHA256SUMS.txt"
+    ]
+  },
+  "files": [
+    {
+      "rel_path": "r2_matched_confirmatory_package/.gitattributes",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 108,
+      "sha256": "a268bd381722747e57bf22d5e4fd2114303b47597fcc01c7c3afda063aab1887",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/.gitignore",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 72,
+      "sha256": "52249faa811f2231e97519350b195faff409a9607fb4ca338cf76f53289e6186",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/DEPENDENCIES.md",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 6938,
+      "sha256": "07bf856b7ab4b8226c2a67015a7f2983a9ff992a74f103d0ca9cab24e284124e",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/core/metrics.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 3769,
+      "sha256": "fb18b3a2adbf0c515e3b96cd364030d9c3994244948db4d37557dfaada96da39",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/core/model.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 13547,
+      "sha256": "bd53a7b8d7b639ccc7947fbd9436ffb2492befd05c51db9509a0a65b798aa040",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/core/ntbn_primitives.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 2139,
+      "sha256": "d58863d49941b1ca50eaeafcb43dafec77f784d70342d611475ee6b87edec638",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/core/objectives.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 2398,
+      "sha256": "73a3f9eb3a44ae2840d2053bc95d4b7b3a6a0c506623e65ebd0fdf672375c113",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/core/train.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 10754,
+      "sha256": "db05981c8338b29087c871c50a2cea6540b6f01b37011246e728ce5bdfb22c62",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_budget_control/bc_keys.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 8246,
+      "sha256": "a046df3ac0e0df6bc8964229abfe9c6acd47b9b8bf140cab2f63f6e75b1c4f4f",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_budget_control/bc_models.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 1723,
+      "sha256": "4f3c5155e21c1bf0dce84661b85935b5f3838b88641691cccf4e0f5eb7fc3f56",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_dev/r3_keys.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 7920,
+      "sha256": "b02bf07e0191039a3885f2bad47475a3d611a8ee4cd13d1f63f8fff3fa04815a",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_dev/r3_metrics.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 4783,
+      "sha256": "601795002691fef55c84da447fac1cd47b4da96584349cb6e75605f2a4552a2f",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_dev/r3_models.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 12138,
+      "sha256": "cf391002e10af3e785f5e1189ac5999189603840f39f2eeee31abe1732c0799e",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_dev/r3_train.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 21929,
+      "sha256": "3b5dd6b8e349f877baaec0cb48cfeb444b0e3c2a85d5151b74e1a5d2609f7aa6",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_dev/run_r3_pilot.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 16619,
+      "sha256": "6ac900b065c32cb6b36b9030f9b1b74762df84b3c6c0c74a7eb0a20803547268",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_lr_stability/lr_keys.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 5728,
+      "sha256": "586049076d5cfc3865842a31ae3fc9e14b890a96d0e5976be9b4e3a7d2c82d6b",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_lr_stability/lr_schedule.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 2215,
+      "sha256": "7d856f2adf2fc89b7d7d8e9364f846bba5f9fad64cec5e4a5db593e56c0b519e",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_lr_stability/lr_train.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 11523,
+      "sha256": "2759f098522467f5809cb8d00386ab2d6bad16589dcb93cbbc38fc540fcc39f3",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/robust_r3_selection_diagnostics/diag_keys.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 8610,
+      "sha256": "28ab2dea4cc06ddb2a906ae234b0bb53424a2c9c13715be9d5bb078d51f5851e",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/deps_snapshot/scripts/robust_deep_hedging_phase2/robust_world.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 5636,
+      "sha256": "b25846bd3cf3e4b550cb50c72b1cb679846a549b04f2739d79d13e0bd44036a3",
+      "role": "Verbatim snapshot of transitive internal dependency module"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/ENVIRONMENT.md",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 3270,
+      "sha256": "9b91c3ffecc8a26f1ffa06b251ab49bdb644f98e3bbe1e33f418ec6c9ee43746",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/environment_server_freeze.txt",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 2954,
+      "sha256": "b62a9d6def151c1331e68f544ab470a1bda36af93eb64dc6d4b3c1e752eb02b1",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/PUBLICATION_ERRATA.md",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 9232,
+      "sha256": "6a3d4d18d5418ebd894bb54495c8f834f30b0326822c4d3c05ec8ac1b635c33b",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/R2_MATCHED_FINAL_SYNTHESIS.md",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 6761,
+      "sha256": "30d4afb6a5c5bb588a9b137d12a5a40537df119e469f0276f17d715900274c50",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/README.md",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 6497,
+      "sha256": "65249bd75e8b831f89fec8edc0a1b1020a39348f0f1499c0551211304d9b9583",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "r2_matched_confirmatory_package/verify_r2_matched_package.py",
+      "group": "r2_matched_confirmatory_package",
+      "size_bytes": 12141,
+      "sha256": "edf2912f02e68bc39ab7e670fd0230b3fc53a946587715c21856b6a7170c992c",
+      "role": "Umbrella confirmatory package doc, errata, env, or verification script"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/.gitattributes",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 104,
+      "sha256": "42ab2f2b0ff1aac325e15fe20f4fd4d7947345d87a719ba6d1de04efaf20e7ed",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/.gitignore",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 267,
+      "sha256": "a12490a0079a72ef1340d992a45ac82cc94bc3ee282e78248dd0904aa99e681c",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4001/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "1660a541044b33325b461bca9a8aa132f7c9955b490b423b53000187d2d65b6c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4001/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "b2d215a2f7554cc3f0b9997a6dcc3fca8354c5017f76fef53910bc5d7a89277a",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4001/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "4ddcc9826e5d547f17bae6d293b82f8760c6582666dbdc6980134adfadfec6f4",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4001/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "52b5aea6009f15f80decfab6d52ece0beb40291af040be485d7858b7b7a4406b",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4001/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "32820c926c70c325be862e1def509d2e963bb94200a86ea82990ceb27735cfe4",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4001/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "fb5d0d505c7aaec251727b6542292a598f8497d2040269b70f08d8358376d125",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4002/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "9b1f2f99820385cbf1792c97f466cfc23e08840627f83d2bfed6bc2fc894689d",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4002/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "de13fef3ea6e11a32d7f82bef4d17588ca2f8ed9a3687fc6d5f88d69f839642c",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4002/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "17808039c06bd02928d81ab1666e824ac031ddf91834772a26a45db55016460e",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4002/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "bddcbac14a6d0ea4ec385a094fce6720934148695cd5dfdf4e1e8a2bacb277bc",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4002/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "39c449642b19c906a9daf2243980ed936bdab6ab1c75bbc021f2ef106bf2f346",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4002/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "82919ef1ce5931533740c10f23ef0955517f1221cb220ca9a8e9c25419193464",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4003/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "eac591ebe35b8ff44b6fa8ea988e962b8a1fca3ce1966cd37725548d1fc97319",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4003/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "a46d85f1539917626a5c8765762342f2d8b68d829f69eaf58fbc165074f51495",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4003/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "580335d196dae90b46c4cb482a4c6a4397a4b9b3ed3ba80b40b240f7ba4d28bb",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4003/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "531258cf3c9dd865db494b6a5d9f6de6d7a2054da28e18699f4d8128b9eaf9fe",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4003/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "c17c8748561326bcc057af5f0caad31c63e28af9ff4f76434ee327e6cb3edbb3",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4003/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "ecac4b743648b76fe7acd4f8f421198f0f10bf7bbca4377a081529697e8eca7b",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4004/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "8264b540f2cb38512189593eade2f2665836c9a6d498252a9d4b216e1f9ee3f8",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4004/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 261,
+      "sha256": "7bfa0f535a5dc1bbac7ade2ff3ac7fae3ac885d38361c4492a87a3713f0c42ee",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4004/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "9d54daae4b235c124b8050d77053d75b165546c2bb7c874fa3f7ec8f7d054b2f",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4004/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "8b0c16f9b5fcfcd6da9061b4a1db6d5adddca96a4a014a8a6a00fbbe05238ec2",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4004/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "9cdcf0fce12cf7896f0e17b80a4318e5bb185e944be8cd3301886348438df502",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4004/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "8d882d50071c62d58f50ff91fbefdb7b64fb716510f3d3f351cbe2af836173c4",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4005/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "24ae2c20f590e87d0a9de3a66cce6dd89ad91c4c487853ba349a89992287e2d9",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4005/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "cd29e3302182e469a1c33f4f8b61af702f29e2596b04ca721aee7090c4b2ecc5",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4005/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "2999ea724666491d6782bb7fe6c7d199d4a6a68e8fc73ea99fdfc193deea17ec",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4005/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "c25cc4c248d62d6bddcf4a851c5994db668b7dd88556833ee1d25fd5783a73d3",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4005/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "23d1e9beeead214ba5873525ad327e8d3bddd48ec02029970b5da2b48ed9b675",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4005/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "1ca092a51acacc955e903b7de846ca4c5e21925cbb0337284adcd74ee07093c0",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4006/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "cbad8bdef340e9a37679dd00cf4205eea48adabdf397ef3793926848f9ef365c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4006/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "f9ccc3b3d0e87256c4cc62592abcb71b7fb1b4157954374f453b87bfddca7025",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4006/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "865a22336bd85350e1f3b110be35b5bb284fc28c2568c7156be72a403e2f0f53",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4006/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "850e20f2c8577c077750119fcc537004c257203a95bb6ce0ca1ee64668cc345f",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4006/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "2866ab313a0ceda9a3e4a05b6d2796676f53532ba7f75ad68ecba9c8133fb091",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4006/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "e5cef3b350373af18476c414787e00d5797771e9f0d7b322cadcaef43e5b7bc0",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4007/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "9d0388127e5b665f48ad8680fedf4060b74d5d8b13267c4b96654d16f4b25620",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4007/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "76457141ed55b8af87d72c371d7c408e524155d99692c10ca2ea55844dbc3df8",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4007/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "9d313b2b05f156a2f7d5f2c931fa446c2febddf846a1b2489a2102ee2b17470b",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4007/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "6a174c0876147f13748523e787175aee24674da5e511e58ff48bbeb91c8bb1fc",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4007/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "df666650effe6a51e8db2a938d08cf2953db7b501ff769bfb3c43d2a48053044",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4007/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "f4a38baf8e4660b3664fbe6fb43459bed7b38bc41ecaebe5f69e0d149d4624aa",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4008/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "99f37d3e73f4efc12eb14e7e74001c2d5dde283bb106d21859d8e76f306b9c73",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4008/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "d2269b4cde03fc34986511c2bade43c4035c533e9e2dc6eae0f53a9472a76524",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4008/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "ecaf75b49963b96657150277db37f88e2f652a4745a94f3eb74115d158d55704",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4008/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "854c9cb900fbbc785bb52c66a8842942832c6b74f46e6caec39f196a813d3297",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4008/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "d9a5d6310ddd3c8ed8ef8a2af3dbf21c29f44e77edd82451f469274ae04809dd",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4008/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "aa01060dea3e998f944f5cad3eb153a825f63081c86042f627a7355fc21bccea",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4009/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "4242b7b3dacee1426d3be0c4cd2be5a44733cba1ba8b3089704df5d5c9a4c984",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4009/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "baf32fcd60df501b5138baa3ebbd2fab6c142414d04a8bb2ed10c84945e3cf70",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4009/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "651dea314fbfc737c2d63dfa6a35b0dfbddf3be0697a2ec6bc0c00ad5475cc4d",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4009/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "9d7ad5b56a38a5f6b5abc3cb8d006dd63acf762497b8f651d495e2eb7396ca99",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4009/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "a84a5c4aae136b5f3cff1df7f74cb38943172888a6e869a3f77706cdd7c292d0",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4009/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "6e3f08e0951f882425d26160b638905e2c3bc76a05363360b8407ad38335e0f5",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4010/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "54530d9d684108a9414dfa597219f9fe29a6fd1f9670da61916a5c12d253b2c9",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4010/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 261,
+      "sha256": "76f7cf5bb06abbe019cf99c9586b67d3bede1652e24b3aaf2eccf5d445d5b306",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4010/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "9fabdda2026d1aeb41290dd0040e5c5bfe01a8f6749561ba7213f0355b30edeb",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4010/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "bf1dd25868fd61b108073399adfc8087abbebfd6f47a2b3af29de2ed59a60669",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4010/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "ec6020c5cb20bb7307664fae1effb62ff57841dd59d7178e33a801c042606408",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4010/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "683271e85d3ab22856c36ed18ced12c460bb426683fe08feabb29438d4501a0c",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4011/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "738988c0c45ff2827306689814b1c3e1756bdebb4e7736a81e099c6221cacc69",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4011/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "8e0400689935e7528f7822958a23329e34f5f3f0c1656c36cc2cfefafba6ffed",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4011/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "37137b6e5871b7002fcf87dd8c6c77649faf1b38a6c72b612173294f9605b210",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4011/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "53439bacb660fbf779029a5849f956e6bd8e4d6e4b1b0bc1d0bb7e6bcab71aff",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4011/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "ed90691a6d8c3a196f86335f6c713b519749c83e101f4cab173b4065db6bd389",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4011/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "db8daf48b37a4fd0c5219bb04b287c7287766caba3a3a37dc79a3a0be26be1a5",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4012/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "175a90d783f8dc25ae8e154e986a73f2546415d725f64bcb54d0b3530fb87330",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4012/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "2ca2634558bec01418b69b7559ac8bff5a592585f99f348513fbfe7d75ca2eca",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4012/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "cc02e544dc3bb3308bf04eaad6cec3887766ebef19532d1d5833c630ef83961c",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4012/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "a43edb3a62c996687df71c253537391424da3e85283e032a219ce511f6bef861",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4012/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "68996138a56bf17e7c676bbd475bae7f74174a3f2808f74bd16b7a6b44f11e2e",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4012/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "de36c9926d4f7c84d97a337a4230ac42b0f2b266fcc8365ee57223da24adc0cc",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4013/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "e9a28ddd8232b11220e765fcceabc8a4b425dbe09ce187729f385e7ee016ff41",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4013/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "fba501f2801b0fbd5120d0fdb8740902f7f6f2477823cc989b2b5e566345b9eb",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4013/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "18f47443aef7052f68f800b9693b1730e76bbb85c4d3329ff91ea96165b3635b",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4013/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "4d671984b09ed7bd69cfa5121452212aea62ae39474e9285f532456647069696",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4013/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "f65661c2e6eae6fca2d1187081bcd03c765d62f2ffecb575b572ec0fe38d11d1",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4013/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "d807b522ab37810c88d546ceb4a98c321ae3ef723f82d35b7008ed835adbdbe7",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4014/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "b9ee3ea769d5236b2b1e6a799c06b88016812e2829ce143368b76161ee3fb6bb",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4014/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "0ca39ccbeb3364a43fac58275df7691346d93c29860943855ebffc75ade3665a",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4014/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "d6e686b8e6c45b7ffbe0e60680628fdeae76194cc08f2409f4e3c7f0f4addaef",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4014/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "c294751fd0d64679edd684551f06b235c6dd479c7c24726d76d5a3265570a96a",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4014/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "f0270fdd220aa03cdf113534b69092792a55dc2903673af57fa0b66f70cabc47",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4014/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "d471904797899cc6c1dbbffc3f7850fc909d8c29e83581ec25f887bfebbf9dd7",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4015/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "07a6f934f4be2effcb66cad92a7714c75c486af30cdb1a8e3b4fd484f82e1ef3",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4015/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "bf19ea3b97ef2dc0ddf0737d6c44ec16f3fbc93ee3ae6c2f34f10121394e3288",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4015/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "fb5147dfd9f80d2bfd27548ddcf0f0ef087df747b3be1b544208fb4e224c4778",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4015/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "35f52a762d47f2085d0f1636fbb989acd76576e6da4b67cbd2f12146a15549e9",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4015/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "9522a4b72a46ac30b09d317f97fdc42fc40a33170a19210ab840d8c41a6e1f31",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4015/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "a77bbe41bcaa7ba2e6ffd4a0649fd21c855676e545a809a395bb9098ab89c2df",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4016/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "29e1ad505a10751650487df1200a9c60bd1710c268c2af9900e586f4063a6cb9",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4016/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "8d72ae3b6bb11ff1869fd887c599efc35fa7910912bed938b06c34ac4f56ae5d",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4016/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "3f8434dbc2abad626d511aa794e36f3cb5827cb3d5247154b304b6e9c4015108",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4016/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "18f14ef45705d7bbe6b332cdfa87238789a3bc76d9db6e68db6e682641f7fd0c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4016/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "93a241dc541b2f42d3b6df61b087cade1f116be5beb9f41c87ce3386edbb2749",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4016/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "4c9e0ce837c4430588abf8c1766cbb16c5986cca99b185827c68efe4481708a0",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4017/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "06a72195e690c591080729f955d92b61f60b3b1ca2a13571335160416bbdbd74",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4017/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "c733d360a30e3b514454493f9e659510abc909d3649e34cfc81e5f4d7bced53b",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4017/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "00244e9d8256214b0c7575e6b3934db6e91fdde4f5b8e6f8906562df6501afeb",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4017/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "886b9e29a7b8b71a7094f58f25c837d771a0f706cf707933088df5212c200c7c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4017/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "0d4aa8c61f092a9e107bd47b96de5f4e0337e64b0abf2d9e6000d40b98e767e9",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4017/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "e6e9c4033c1ea4524f8f32199aeff052be4f870db035fea163c523d855ebfe90",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4018/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "ba3a358019c4c3985981af5c9ccde5b9ede19ba89ca9eab1258d347310eaec49",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4018/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "b34880cc51701d1a13c2c62faf7e12d5ed91fedf6463cda09ac8135dd83d857a",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4018/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "76a7e34a1292ead05da230d308329a6373aa43f7522766596fed4a96ad64c96c",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4018/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "a4b78ab7c326ee574a20f2d7ed769c12c92de8306378c5be785368a9b04bcb82",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4018/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "0bc5c7350864def6b8fb5c81420f8a21175a1d4138cfff7a7aa046f4727d3b24",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4018/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "1f67c56a7e7985adc6c745cd01f3df6c077f1fceeb4a5f97e94ab5b45d0d41ac",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4019/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "57324adec0e7c7c9fbbf32f7f32b16530d4e3cb9e3392ffdc5d23dc99f394218",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4019/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "9f6bd6bacfb11868da6e2e8c3dfe360876ff3ef0b0a26982fc7ac52274c13ce8",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4019/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "2ff8083c1eee8cd2159958f043d4a08139695f44ca3e5d9226acc6081f5ff4d2",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4019/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "c8f309b30db5565e1ad8ad0b5c8f00fd1d09c96cb7c46cc33e2a9d9c2b73c6ee",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4019/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "e36f64a2b6aa021496a854023d6ac6d9b0ad27d449f57bbaefbbf7548c0c7f61",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4019/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "342a50a40f808b0c20d6b63c478eba5b27ffe6dde0c99a5918c1c7af8d927e0a",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4020/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "cf59970b3850111c184100ef5575fb2e0b9c21c9bf177cb96096b80b6ab06c94",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4020/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "f322e38b85eb426412776f84fb79f88cacf6a1d86dcc27f85cbfae263171b4d8",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4020/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "685d02582a2dc7f672ae41f093adc9bdbf3bcd2afdbaeceeaeb6dd047d337aa4",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4020/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "f0f783d367fed1facccadf0f48d98e1bf177d081ef9a64a5546747ce24994254",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4020/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "13681b1382dbf410a17a29a54dc3f8a38aef17aea87e5f0275879094357bd77b",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4020/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "709e70d0d8754a3a7bbed4fcc60631a302971a7d8ba81ea6b5fc8dfad1588eb0",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4021/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "b5940364310a673965f6bcf6b27366007228b5011a546330249e9ef297907107",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4021/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "afedb86b6577c3e8427fd398279b33ed7308dcc95e78613e9d97989e9e39b023",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4021/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "8a90decc79b9c9f5d00ad72d006efa211a43a51330efc4ce2212b4fcc522d30d",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4021/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "bf4e37095188073e0e5737c2d0f19be3b1cd0a6a244186a7887a76e77312b79c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4021/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "8c9281ec1116a87ab74075413b1d9cd4654353fb6c99f780b7ad495c430ef372",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4021/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "68ad1a377a17ecab61c713ecc3565cdca273255d7dfb32bcd9e99320b7f0d212",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4022/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "7c1c9ef77ef148ccb1c86185aba759524dff18954e5288eff45ac8154e2fd01a",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4022/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 261,
+      "sha256": "04c57db2399cda00482fb2c5cdbb6810f362933ab5a27af4a0ca45e1ac765fdb",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4022/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "e250a475141a636a6f591f2910ff832a8760fe62e0745ff48e60e8db2cd1c964",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4022/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "f9707f236398b9691673ba66b34b80e84b78e6e71866f50f42162965281bd1e7",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4022/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "9c6c1c20629f4453f3ef1ccd88848418ff4eb60d3f77a601137b7ba8e5b2e395",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4022/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "2681017a48ddda61fccfac45aafcf57540a11b7689d1ac418afa80f52a7cae13",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4023/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "214a6f44c8cfb256f022bc50908807bed7fd85595d5612541751aa65d12538f3",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4023/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "4b3030c809e5a9f816fef7c0562d558eb82882b9e94fb7fdc25b1130ab2ad097",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4023/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "cfa6ae256ccb6a91a5e3e69ef0f28627a7ee8bd44c5ff767d15c7a3062b07a78",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4023/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "0d5f9d532407541af4e89585da31be129d405b7e34a5e81536afb870937c7c0b",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4023/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "eb21c3b4054f1f8dcbaf0da799c15d7afed89f29176f945122df72dfe32e38d9",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4023/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "494d2887b12e8b9419f39f4a62d3af84a4116f7df28eb029acde463a82b4759b",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4024/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27910,
+      "sha256": "117904bff9655d9b2fe12fe4e6fa083c44fa784c54428eb90f5656720cb90692",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4024/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 263,
+      "sha256": "2e8a823baffff4c15ff38ffb284e1d54f7a521e6e8225a4525f19a85d9336748",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4024/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 94094,
+      "sha256": "35e453572bc358dddca698729547ce10f17db7a8f513618f8d5ee8dce8ea266d",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4024/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27935,
+      "sha256": "31ade7f2f8ab4311a88de522e07a920287cee2a31edf5292934d40be3bab1a33",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4024/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 264,
+      "sha256": "64cab89dc3875444e8a10daa288c65c12120aed7d234778897871e9d566e889c",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/checkpoints/confirmatory_n24/seed_4024/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 99617,
+      "sha256": "d156fde35be1d8d7898be49e97d40f89e1475d727394a910cb2618f3a3980f0f",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/conf_design.py",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 6006,
+      "sha256": "a1e4f1bcda7d6e65a25ce284ec54defc677e98a7bf0be3cf32a5ff6d6c7c54cd",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/conf_keys.py",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 8461,
+      "sha256": "9281e5328a8037af6349a75bfe65d6668fe1cbd24e75c4fc484af05edc835e21",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/conf_run.py",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 24382,
+      "sha256": "9374623adfa0533307a9ca988bbecdde24ca342c05b9c2288add37f0404e6c5d",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/conf_stats.py",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 16704,
+      "sha256": "05f7184378772fd78024a85fde662084ee020afed9d38841a79102ee03fa574b",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/CONFIRMATORY_AUDIT.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 5852,
+      "sha256": "78c6b699884a0251fa8d20a16afdf6a38ecae9ddf8b03ad3a7ad46ce12fbb466",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/CONFIRMATORY_FINAL_REPORT.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 17877,
+      "sha256": "d65c73bc9a3343b731439efd1c272d4ed1a022c19b890ba56663afd1129e50a3",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/DATA_AND_SEED_PLAN.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 39762,
+      "sha256": "796adea1a6223359e59d54c0110ad30c5c015ecc1c7f310af651bd18a988833c",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/DECISION_BRIEF.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 5783,
+      "sha256": "d3145926c1ba32b3a6f4e64ad85cd4929dadfa378d068d5ed88f30d808d628c7",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/DESIGN_LOCK_SHA256.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 2653,
+      "sha256": "6efc3675c7fa04289e6ab49b1491ae4c36733b59e0f4d8ac8488cca425e3df17",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/dev_strata_summary.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 6406,
+      "sha256": "d77c30f6990f52b2573ebcd8530576c7991889ef519b53cda825993b8f5039ac",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/DEVELOPMENT_ERRATA.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 10365,
+      "sha256": "d7afa1600707f2fc25f12be58d383db703a457bd235bc8b03484b3f7979ce5d3",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/GNG5_DESIGN_REVIEW.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 7906,
+      "sha256": "7f4e3054f2d0942bdffdfd269b258a71847cefcf0877395f51d2ab22673db09f",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_design_prompt.txt",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 2618,
+      "sha256": "7d3ff921f01424700c48aee1193829bd6c8d66457f9d83b696824c3278301ebe",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_design_review.err",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_design_review_raw.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27792,
+      "sha256": "6f3522c933ccb80578d1fb9698b6a6bb9f7745ee43a146b0665f0c1b041b4234",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_design_review_text.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 27677,
+      "sha256": "8fc1ef9b389306d0d03fe0144245d59c32c632b238c7813df8bb9e091648527c",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_postrun_audit.err",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_postrun_audit_raw.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 24901,
+      "sha256": "024b78335eeb83e4a1f8da0e6e4ef84e94c4a80c82a74960ce91555da5a43fbf",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_postrun_audit_text.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 24681,
+      "sha256": "e96c7160db58a6f04025df947d90d2f45855fb70923fb8eb74160d3d679d1115",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/gng5_postrun_prompt.txt",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 2322,
+      "sha256": "a4bffdb0c6dfcb588ff7fe3345a52b3543e68efc0eaa206985f7d51addaeedf9",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/run_gng5.sh",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 585,
+      "sha256": "1803d54bc76569da0ceeaab09511bb577b5d4b87461a650f229764b655f08f00",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/run_gng5_postrun.sh",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 586,
+      "sha256": "6a47fa44101e003035a512fbc4dba87a9c0b6e2ee362f34895c99f00d67f6fbe",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/logs/slurm_conf_n24_16911.log",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 13866,
+      "sha256": "2b7aa914854aa488f48a68dbc2a2e6c0c7cbdee9313635a59648e325149e5c02",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/plots/fig1_confirmatory_primary_paired_n24.png",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 158087,
+      "sha256": "f3b2c4436b6f742c170a5a4fbd1d4edee2b57af69eb013b92ab1b7a68060d199",
+      "role": "Publication-resolution analytical plot (PNG)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/plots/fig2_confirmatory_6scenarios_best_val.png",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 150782,
+      "sha256": "11bf65637646a264871c3fdb20573822b4803001b22e3ccd2837b6491842afb9",
+      "role": "Publication-resolution analytical plot (PNG)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/plots/fig3_confirmatory_best_val_vs_ep200_and_loo.png",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 160429,
+      "sha256": "d51ff46797a5f6bf6400ec7aaeeca90211df638b84fe522d1cdd07b7b4c93fb7",
+      "role": "Publication-resolution analytical plot (PNG)"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/POSTRUN_SHA256SUMS.txt",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 4248,
+      "sha256": "13f08d6de43bf8ff3d0a0a2669bb604be0ee80d775f8c06f720cde3ae00540f5",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/R2_MATCHED_CONFIRMATORY_DESIGN_DRAFT.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 17898,
+      "sha256": "c9fbdffd4818cdfcae94351d7870b05563c0750adda41bae4eedd13190bc15a5",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/R2_MATCHED_CONFIRMATORY_DESIGN_LOCK.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 12124,
+      "sha256": "2595caf85d7f3d6197f2d6279fec36989c46ca93233d2480515e4228b1ac0c89",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/RESOURCE_ESTIMATE.md",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 5690,
+      "sha256": "6747d50c92104a076393cb4e8660ac53e6feff0099f79c61f3938b5cfcf00dba",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/CONFIRMATORY_STATS_SUMMARY.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 116437,
+      "sha256": "825f0662dfb5fd2dd6f7a173a6371843a620b43bbede848bb6962c50a937172e",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/EXTRA_POSITION_SUMMARY.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 2687,
+      "sha256": "00ea03cf6235c8d1e8cb0b81476f8f675e424ff54ded6e4afa80f63f2a05bc98",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/PAIRED_CONFIRMATORY.csv",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 89641,
+      "sha256": "6ecd5b711ad3f9bd254f4ee552a1af68d2285dcc5013ff90e41f92f372e8785e",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/POSTRUN_AUDIT_TABLES.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 15648,
+      "sha256": "d1194dd8e3f40dcd417ee08dfaac3cf72324c00d848fbc1fb28b6043ff718c17",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/RESULTS_CONFIRMATORY_FULL_PRECISION.csv",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 146214,
+      "sha256": "f1d5448dafe977d3a1124806b1106519372e5012bccbed4e7f1f5f9237a0a418",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/SECONDARY_SUMMARY_TABLE.csv",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 33995,
+      "sha256": "fff9b38370af1e0c377392af12fa51d98a452022091ce9145f4ba4fe6f405e5c",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/SEED_LEDGER.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 5028,
+      "sha256": "fd593c8ea20cc61eb80e33144855a49f9ad0778e71084dfde38c1811c530b1f2",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/results/confirmatory_n24/STATS_RECOMPUTED_CLI.json",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 78989,
+      "sha256": "8d85a020fa3e4463855b3c63d1a0f82144d9bebda47b8f733e15fe0086815f95",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/SAMPLE_SIZE_SENSITIVITY.csv",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 17816,
+      "sha256": "564c441de11a56272aad8e5d004f1d255a5b74558561a6ef6cd620e5cf88949d",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/scripts/postrun_verify_and_plot.py",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 16071,
+      "sha256": "50ef4838ea1e063d16d6cae79a45d574be3f97e961c456e903789c1cebdb6284",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/scripts/sample_size_and_power.py",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 12801,
+      "sha256": "e5766e020a0caa07c4a8889c45b2b51ca42033f1225e89338b0eb80b341822b7",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/slurm_confirmatory_n24.sbatch",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 2685,
+      "sha256": "5edb053aaa5ebb33cd9883ca858f60f2b708d591af86d7c163d154beca434de0",
+      "role": "Slurm batch / cluster execution script"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/slurm_confirmatory_template.sbatch",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 2490,
+      "sha256": "bbb56d21352a1c5fd54416d8c81f725c70c434b4a909362eff878c1627e117ce",
+      "role": "Slurm batch / cluster execution script"
+    },
+    {
+      "rel_path": "robust_r2_matched_confirmatory/tests/test_conf_suite.py",
+      "group": "robust_r2_matched_confirmatory",
+      "size_bytes": 15090,
+      "sha256": "6f6dd730edc89534cbd92f739da63ffc11e1c82baf16b925c8c97fa36a98bc21",
+      "role": "Pre-run automated verification suite"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/.gitattributes",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 104,
+      "sha256": "42ab2f2b0ff1aac325e15fe20f4fd4d7947345d87a719ba6d1de04efaf20e7ed",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/.gitignore",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 353,
+      "sha256": "c7fa20da2f23a8b07e0fc3fb7a7c29b6e34d9c2743ab9d127b9465e38c690666",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5001/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "a011f97e7187572a164a3fd5ec0710e53d933a94307056dca969050e32248a1a",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5001/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "30b385e9637cc6f460520cbd9ae43cf74c287f0c9192084b6068a6cda4e425eb",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5001/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "6de4116b0d14b09534d97926440709a6570cc48036aae84ff708f5d23fee5947",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5001/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "b52162d7a3733c92c0ca3131c63a00489b243a8ceb96a5b8be597ca956b68b0c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5001/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "136f0ddfe16bfb857e6fe03b03647e827be228f2fbd42a65093afceea38fc8fb",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5001/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "ea53dc979821a0dd3f52c5279fc9dd7a23d96a6980174213fc52622f751b6346",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5002/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "5d1b151ce0fbf0d01acbbf4950957f21791a3c62e94d321d2f26abacb0eb5c21",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5002/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "09363e52a034f4d20abcffaaf745cca1b670c6fb3596a1d6cd1f5784b075ceed",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5002/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "1474412738be95d89de1b2f3834eaf6b62e19465886f9161659ee3cdf7496afc",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5002/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "a3a9ab8e41864b8b43163fdf1f3156fdf39d8dbc28197e685ded81cd411c5a5c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5002/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "5557fe558e5b0e5c60995f7c405d596014b4ecbce7d33cfade1c466f08942abb",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5002/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "66669197cce422a0ff2295a0cba4e1ec351b690d8b8ca12e8a1a8b620ccd5082",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5003/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "ae69abe3b51b329f4f37a6dfeac0f9a48da7551ddfdb361da112e324407cd1b0",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5003/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "0f3c034f3ff6265b685b038ea94682c8e02c0919a1be3e86c7db8d70226ef76a",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5003/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "0c99d15627e4c8d7169585f2d15e1457096fe48696fca44569361004523bd742",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5003/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "b9126bca5dceb3f556ff2dae25e37da0e60bf172527bfeece0d8d2442fb2e0da",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5003/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "b01ef7e655c0e73e9f7e3850628c24d9464b3b39e248e267afb91c260ea5ddff",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5003/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "e493f10e01e4e0a535343b1908cea17701287db6722a839f4f7b5bcfec5a52f7",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5004/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "8c926a72bdffc1e2eebcf4556fb619d4f2909211a76ab9a5cfaca130cd0ef35f",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5004/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "479fdc479d831f78ae472bc3c9a1ecba4ac8b35ca0d982f322130e3af0fcf4d5",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5004/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "502415d98351dbc27b53948fc5958f9081d6637ab52d6990981f441546f572e0",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5004/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "51fce2ce828711b5639c705e407b8934e471554abe031db11b5be22c465cfc4d",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5004/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "86c35d7d1038592be4b18bbebc9da3b048d768e7db8ea2b5dfbeffec644c7c4a",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5004/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "c3813f8cd9e20b90de035a2162c1ca4f430c9097dbdfd5ab89b557cf2b592bab",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5005/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "89720361305bf048d0e7e24cf902e97b63b803770f04b16ca6ef49db58930e6c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5005/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "58b5778014e67c7156cd8f57ca64232ac188c22d6abc782f3658697c791a7905",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5005/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "bb95391972d6635384483e025f247f29009f3dc1bb4aa8e7c81b83a26698cd11",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5005/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "0b056a5fa7c29e4f250312b2352dce89269781b7e8cae59a431deb8270a4d826",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5005/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "ee44a465f80f906f7c104741f3eaa6bf6b8057de82c1cd58d7a1059d2e0af3ab",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5005/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "01bf4bd2e337325756ff189a5ef5748d6f4266dff4e1b99e31c54590af119332",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5006/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "47c3477942e40588bda06aef5a4dad140a2e266e51e80fe3d89b0299c2a3f267",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5006/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "fa0b7882b9f8ecd4faaff7397717213efa6d789e9f335a18c9b28a19a77709cc",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5006/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "eb8bfa7455ae9f813c03363be95adb04ef6b2e1630756bda82cc8247eece8fb1",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5006/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "2df15988f13956cc04f841a685a6e0321add793a6d7eca028e23938e378713c6",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5006/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "497d756d684a0f8242092f9e9091c17ca01722c0fb153d0f4c64a294a10acce7",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5006/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "f595cbe142437c2c56a7b8329cd00b15c84bebaac8fd9b63a2ee8404fe3fbc75",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5007/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "af23d0ebf44c3ee9cec994dc2122d4dd6a9c6b6e4096c9858fcd5444fb650a60",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5007/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "9351a30904e4169e0d5c9b2a4259fcfba3dfbcdc9f918698eaf2990d0bde2786",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5007/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "29bdc1b461bebcaa723126e6e05f821b4acf4db8a0625669a81007022478123a",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5007/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "c8970bf97fb140d1eeeb7858585f57f545c1e2df0bf60dfb5ae3a6805897311d",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5007/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "6060bd8ffd4aefc742f8918834efc73e314d24e5ea6981ba988ec57285e2db14",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5007/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "cadcd1ffd8ff316829533c3376c5f432baae8e94b00ca21d569543685b2723e0",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5008/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "44cfcca58c03bed8ebf5eb7f291c8c1ad0d056cd078ec5c51cfa131cc093c9b6",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5008/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "b48f9d318c0e4b53642127828ba0597ec214ce6834b9382679bcbe526b047b2f",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5008/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "5bd1c1811f66298c7e2b1d7ff23ad02273808c5f9d06381e28790cd4bab7383d",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5008/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "a9d86d812155176689fdd94bd1a370aeb8c5706a77b993b1c6f208328e12c301",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5008/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "3892e3ea8ec51a02fb3e93add965ab443397708788906966400ffb0726db7578",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5008/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "8c221396b7938e9abcefc45b5316a82dcafaec75130d5ebdce2eca35caca5583",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5009/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "6f4a31aa0ff52e7b960bc82dc68e00bf014ab159239a92924c003b823e998758",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5009/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "ac9d9b4e0ca34bcd7978816f172c614fc4eadd2310607e0ba06dce0228954e85",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5009/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "46f4a11248e60c74f89a3739d98785e609b939d1d449cdc48128bade0cba53a3",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5009/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "0afb42da24d63242f9e80012e2a2d7a7df9bfea36742448e5ec5ad900440943d",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5009/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "890d813e04e0ad8a1659871ba24cf60f11e0f4a0f1750438c2317faeb00e3312",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5009/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "5a30441fa6bdb24a570316cc875bcceb2744fc5dc58f79840ec5cb06e6f48e2a",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5010/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "cee9527c0289e4c0884a8fa60798f19261de1a646d37372771edddaf6bf39464",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5010/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "299f7f661c4796139e3d9965fd28c712c61ed31c1f2cc8acf1ce527435298706",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5010/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "cbfbebf47560c0ef59de4a4f775d858a0a8449ba081a465e8320a21c9356ab07",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5010/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "0202dbdca207c58dba8503b1922722ed0f982257eaa752910a5e64bb83a9b7e3",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5010/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "1e89d83115f536fd50f2e4f68c382c750776c30f2ccdcfc72f0b7ea185c581fe",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5010/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "657e8b317bde9160c35cdbacc075710bfd570281b9a37f595284690c6d86f2d2",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5011/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "5f9e97c2b3c00ac1887d1db46395093ab2e0136a5a239ccc7ecb54a88d977efa",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5011/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "4715b56e8fcf9f17fadd0b0e8e0fbd5ff02eb0e2d0c3f9b59cee2868f641cf06",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5011/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "03419c9560e17017586f9d9f7464edd3f90d3c184e4581af2c3c1b9d4394eb13",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5011/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "d7c9084ff2f37d33ca30120e96ae63f491e74790897d087d1015b62fceca8ecd",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5011/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "2c6c187546f8d0acead63f8c441c94393b2219bed08165c5c30b89dd94f3d715",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5011/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "bfee3bc1dde1fd8691bef479d37bbed1c4b1b8b268fdf85d4e34d6626b3b61ed",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5012/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "5573aa7bf030045102013a8e0efd25e87966c9c62467e5dd98e02fd41cee28fa",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5012/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "894ed22a52d3cd151ea75cfe02366d15ca7ae03f1c943b198fd756764a809f20",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5012/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "68479ee50adef43e72cd3388582f3afe9d749e5e2cc56683385e258bf9d3adf2",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5012/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "f74f8a3541c8481eaf1c9ef6ae8c71afd96596dc13556934238ee25bf81fb85e",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5012/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "a2fde195ed76bee9788096176eb45275a94ec7f00bd7d4285a1d8c44376c5be8",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5012/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "44d7676e503b2a15b907227d7d23203c4e654cfc48ca8d0dc041491cec00ef53",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5013/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "4809ed0c0a93a4d522a87164fe4a1dba356b5bb7dd4e7f0c7539ca8cb5a065f7",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5013/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "713f4b6616a8e03a5426516aef9a368db89ff2eb63ca29b2f590f568abc9ccd6",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5013/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "0eb774b03dcf1cc95d07f0b8c86ecd9f63967e8d5fa3cd3c5eff8ec207166701",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5013/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "68ca0b5e990c05920748d0be6629aef8c5732697898346435acce094457d1cd5",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5013/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "99b5f2839ad126cf6cbf03f79119a83292c6d0907831ed772e6d3a5b1df845ac",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5013/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "c1fc381105a9fc4f605cdbd3c0201aec0a1f70977bcca3d4b7daf94c9e8d5538",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5014/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "bbe888dcb164a6ed64c81c6bd14851c38b9a5af1b07561c58390a356c2d37017",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5014/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "adde83daa2c1d583f55c83e405ad9c2896c88c32bd365603dc0dbb8083ee2a01",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5014/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "949987edbf6318d079bfd5a4301d7a67ebc9f6e7d58692374ee219042b71cae4",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5014/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "e27701a2cd3fd363e56ee38e0639fdbc8361851959106bfd1862adfceb880411",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5014/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "c64cd3c1d5887555274f64bf6338ba755efcf7b4b8786210e1eb81211056a4c5",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5014/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "39a386d275f9550241b26a4130a2821bf7d15ee64e7f2944beb78fe2a41921e2",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5015/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "981d79d397ae74630916d2fd7d94cffdd6e5da2ccd3280eba8f399023b25c7b2",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5015/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "45ab586da35bc8c272efd8b54be7086e27cb84a102f182b2c0b71946fd89fc3a",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5015/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "e355153cf4bf628207ce7c74b126271340013fc8ca0ce1484dbff9c24bab186b",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5015/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "e223998296ec9178387c5a84aa791022e74a01b898e82891accea3e87b538548",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5015/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "d0ab5759e7ee6b94b067c3956e883196b79ce092212775ffed5e105df2ab57e1",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5015/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "ad1dd4855e5687f45002cd72fcbe3ea973c4842f6b2262454f9eeff9bcced6c3",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5016/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "bcaae6e8ba96ff62e2bf59b8e52b62a7075febe550667f62f99b7f27840b5b42",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5016/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "28842c8e89be69efebe985d8fc27e6d0ef361e2a947e1f6d8ef8ac42a4da4bd4",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5016/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "bfdba665cf2ac9158f1cf4c29ce69428f0db4c6b41015fcd5e7ce1ef1fc47bb2",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5016/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "05e08f45668aa9b7276833285d6c8519808b42e8f1f9da556206fde3e89446e5",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5016/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "cc0159345b18b2174de9b16666303d68aafbb8503dfe3c388c76a894bcdbf583",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5016/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "f2a70e20bc78bbe6bb97e85ef67fa86b6df1e298e6f6afc3c91145883201bb5b",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5017/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "730513412538aaae0697d9283b8b5f275e3374eedb4eaa0ff797660151bedd50",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5017/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "52936e5a7ced1cbb9cd63dabef3fdd790573775cf3ca81c62c9df82345e72c8b",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5017/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "c00f86cd307be3601b1e3475121d1870f59671abfc90ccf64480ecf557d1db93",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5017/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "a9e5588cba4bda4bd2c26ff85fc46a16f7df0fa5dab3d172a05ccf54ab8b2746",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5017/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "37b54cfe4da8590a7e27d997067dd6d5dca1f6999a7c2f6b7a30e9bc7391fc87",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5017/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "1484987ae1e6dfbf04abdb5a6b2c421a6da9d6088987dd46fba64d16693d4d4a",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5018/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "bfa67e7565dfc08f5b9b01013b8e1c666ee55baf4e308774a5fb735173754e9f",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5018/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 278,
+      "sha256": "888d16f8c812ef178f9b9d01b34e25b4def2d658314d105abf00ec42db0eb2bb",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5018/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "50a5fda438dce7c4b891c147e857a789866fa69e5a6368b4796b4909026b7d11",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5018/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "317a9f4082a77a437c0a45a12d4f7e66a8e8dea5724c2b366e4a85e4f844d4d6",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5018/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "2816530e89c779775da9d96db5f206dfac243bf875093f2c47c97408832e6498",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5018/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "36f4a8ce9453425f502b865db74f672f465a8db545b670f87aad2e1f784a2a07",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5019/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "e5512ec19800b6540abc21563b4ffa46467f0d951401ea4c5ea9b21365513b2c",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5019/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "171d93396fb230406e0087434e37c395f76a4f885bb19986683f22618a87fe7a",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5019/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "5c2e9075960265836a9cfbc9a818f81ad687756de8f41b6381cba54315ca642c",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5019/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "d804813fe3ac3eeabe71d389596133e70ee3ac60cad6cfa44091aea46fb53879",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5019/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "349fd3a5acddc0e2225df85367485e2807add226471d6cbc748ee12f507e4fb5",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5019/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "f58a4a466859276bd77d9f1ae730e324f463e20630ed98d5a9c09763d96077fa",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5020/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "c96389bfe27cdb2faa49b98b637c4eb0610321e479af2c130d37db27a5050ea1",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5020/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "f71161174421a67ceb8c84af0c9da3e669da3340def6a6fdcc7e8807c5f6fd81",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5020/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "93d41e7de72b7b5df0134d6a6830b590bd0ee1d92cc1dfe0813b725aed58ddb7",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5020/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "c28291d6716ddc58ce2aa17e49ff6922760d027fa0f9339c58b3e54a1037aec4",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5020/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "baba5565e1f8ed3a803651881776e6eee35963326e5802854cdd945736d1ab8d",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5020/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "4736c0a16faa6d50d31bfacedb12bf7b8a020623de11a29baf04033f42abc588",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5021/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "6efd6139b904a5660f636d549864771df6dd0eabc2f20d81b97ed4f344f7cea2",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5021/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "ce8fe95936a9811a779c214f20e2da5d6d7d883566740aa0edf3d5917bb0aaaa",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5021/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "84a6eb85bd964c7901752406194014256c92024efde78a9dcbd88b64f66d72e7",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5021/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "65f14218cd5a4ffb617eb086ee251b1a02512be63aa99ab28173d313cad3fedc",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5021/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "33c03bf561aadfea8e1d9fdd898c8c507593e277295b74f174a8aa0128141a94",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5021/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "3ca8f8b12875f31b8004de279b62edf4c2fa82038a83834547768083738f07d7",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5022/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "18134ce163c0d228dce4a72bcdd04503ac3060df2b3f59efaaf2cfaed465811b",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5022/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "f3010f7e7e14465b66bff4a36b1bd466f2a322aa7f2e6d0596fbfe7185e74dba",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5022/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "2e5b32f01b64ab9b2fe87bd934bd30342a5d05e974d8d241c1afa0308f16738f",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5022/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "d8caea2eefb48708e8166b4addd05d3c4987183c2d19a97509b8b2346c789cd1",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5022/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "1ecb3c47e9c70137f0f1948ed641a1da36289003ff4676c3a258c6876ed97ca7",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5022/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "eabc2e3fa27b2dd744f1479653da2d77e15baf1e24e4d99aa20026dffe1224e5",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5023/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "0d3b2694ec7effa1b50ba3e155bc25de3a1778ff7c0d734077163e3db609c396",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5023/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "74853174b736fe76795e7abab5530882576849234dcf5814f7aee31d6d109620",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5023/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "704e8dcadac2a3f78b8aeb87ed66b81ff4636458a3d33c61e336c8087a45f1d5",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5023/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "e1591084378b9e52ff2f6fb98e27e6dfcbb8d4ecf888f22962fab0150bafd454",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5023/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "0ca5ccf138c26eaa369ca317f35b6e2b1fbb5674a3fe67745848483f1a9323a8",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5023/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "0ee635cae045c5a23c153e6f6631783773370fa51def5edc3bded85e457c537a",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5024/A_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27928,
+      "sha256": "d0de5aac7b405eb307159c1ea38be54793c09f6555f9a089d637c3186c343735",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5024/A_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 280,
+      "sha256": "6b1ab36245869f0187c9632de583d261f9b63602e4b790f291baab7cc2dc1e8d",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5024/A_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 99955,
+      "sha256": "3972a8c3cef0f438d74a5c9cee37cd957d564a0a17c1dfd5ca1d39d14d405b80",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5024/R2_DECAY/best_val.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27953,
+      "sha256": "b92bfaa42f7d2eeb1cd210632c79d0acfaa00f1ed48f272285528fa0c1351e3d",
+      "role": "Saved best validation checkpoint (best_val)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5024/R2_DECAY/checkpoint_manifest.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 281,
+      "sha256": "da7a555520c4899b6bef525e6337db7331c8a8f4a0252ea693ae1992f932ac5d",
+      "role": "Per-run checkpoint manifest JSON"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/checkpoints/confirmatory_n24/seed_5024/R2_DECAY/final_with_opt.pkl",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 100028,
+      "sha256": "f583ad9355debdb22c13ceed4b8a3b772bf54f2ff871dea8c938ed251660b29f",
+      "role": "Saved epoch-200 checkpoint + Adam optimizer state (ep200)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/COST_ACCOUNTING_AUDIT.md",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 7744,
+      "sha256": "e826429de2167e43d559aab71aac1232df68dc41d4bc8170bb52d062a246c91a",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/COST_CONFIRMATORY_AUDIT.md",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 7524,
+      "sha256": "a8b05ef1e0c4eea723ef79a56cf07ece9030522bd347a0af32eaac032caefc80",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/COST_CONFIRMATORY_DESIGN_LOCK.md",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 9150,
+      "sha256": "9e35c7b9059476cf0f98da65bf69a3b92968cebb9e5cbc55343aa6261c2d2ab9",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/COST_CONFIRMATORY_FINAL_REPORT.md",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 27647,
+      "sha256": "cc57bdb3fe1e8db7e48216d387b4ac234aa96fa9d0994d814bbc296877539ad7",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/cost_design.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 6610,
+      "sha256": "18ac4b929130f899f3902f982b79e0146e8f793229d1d31dae6494481ce1b04e",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/cost_keys.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 11431,
+      "sha256": "b8e5fa1b757b2b318751f03978eb405b11cb749449dd987afc7e118db3da19a1",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/cost_run.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 35495,
+      "sha256": "26f8b8416fee73c263f604d74607501cb97a3d10b19d08716711f6daf391838a",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/cost_stats.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 7202,
+      "sha256": "3af10448a5714a66400b8e783f12d3a86708c383971f864b53f9026c638c1409",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/cost_train.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 11072,
+      "sha256": "c2debcdbe1870c39c9c9bf4a35d094a1f45a4e40dc5f295ac033207e0b3c29b0",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/cost_world_and_metrics.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 7424,
+      "sha256": "0cd43610d05a5d6803ee2ca732c652c8a4e7c758211e8e6ce7d1efb8b795858d",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/DATA_AND_SEED_MANIFEST.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 39752,
+      "sha256": "3c35ead542d555a1173afb15888be4f8dc0dcb197a20a1af44ceae34fd84b56a",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/gng5_post_audit_raw.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 33714,
+      "sha256": "be639244ea3983164cad29640c1127f034fb4cb3c12abe6ae6cc0ed670326d8c",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/gng5_post_audit_text.md",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 32680,
+      "sha256": "128653ac3eb6a4b5f7a523125ae42e741826e824aba487e2f798a1c3ce7727a4",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/gng5_post_prompt.txt",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 3265,
+      "sha256": "8653147ea67a195b053a5ba1f3f8b0f2990aa11469a93d73acaa7fee8dbe9b6d",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/gng5_pre_audit_raw.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 28927,
+      "sha256": "b9b3f6c49839c90f5c4a078d7005bb262e394292cc75469b03616ca69e53ba0c",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/gng5_pre_audit_text.md",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 28245,
+      "sha256": "00ad69ab2b8aa06872da4997d0e11c81374b042ab57a3f4baf45879f914bbb9b",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/gng5_pre_prompt.txt",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 3120,
+      "sha256": "88f42b19fa755fdc040d6d3d4487a115d883d7d65fdcf346969d9d471b78b704",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/run_gng5_post.sh",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 442,
+      "sha256": "aa8219b17e919aeac40f3a74747ece7c605c6ca485df14f1fc083225fe3086c3",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/run_gng5_pre.sh",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 439,
+      "sha256": "b022ebdfdc92e0e45d71a32ee6428ae9b20ca00bcd732ef1c721c8fc2302c149",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/logs/slurm_cost10_n24_16914.log",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 8668,
+      "sha256": "5e9aa09c57a0b55435a420be80e2ce1cbaa76adead18f3c23fbd0efbadc540c8",
+      "role": "Slurm job log or @gng5 single-session review log"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/plots/fig1_cost10_primary_paired_n24.png",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 101034,
+      "sha256": "fe70669aab22e31b0f7523e1dd7395beee38f2a972c7dc1820749a15cfa07ac4",
+      "role": "Publication-resolution analytical plot (PNG)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/plots/fig2_cost10_6scenarios_best_val.png",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 121891,
+      "sha256": "3c08a45080ce05e522f27ab88af374cee9a1a1c3a718db8f8eabda9dbe0c018e",
+      "role": "Publication-resolution analytical plot (PNG)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/plots/fig3_cost10_mechanism_gross_net_immobility.png",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 111967,
+      "sha256": "24f8ca49b41f1ecb30d5b15c8ea93bd76f42c9ca2ff95192b8efe3d15e978f04",
+      "role": "Publication-resolution analytical plot (PNG)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/plots/fig4_cost10_best_val_vs_ep200_and_loo.png",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 109851,
+      "sha256": "620dd283ff9d3ff0207fdb31abcba42084f572cd99bb579e697cde1eff173162",
+      "role": "Publication-resolution analytical plot (PNG)"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/POSTRUN_SHA256SUMS.txt",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 3415,
+      "sha256": "5485e546fc5a7c57ca856497bf26f585c9c149166f9c5f6008f45b71c24872b9",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/results/confirmatory_n24/COST_CONFIRMATORY_STATS_SUMMARY.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 320885,
+      "sha256": "01fc4d4ed8305b60e3fab9c811365b718b005e070ed95e496c61d1d1f0d4c5ea",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/results/confirmatory_n24/PAIRED_COST_CONFIRMATORY.csv",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 272417,
+      "sha256": "c8f9dc7c857b3f104e2fcf535989ea89cba188e5cfd845c781e40ad28ec3f281",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/results/confirmatory_n24/POSTRUN_AUDIT_TABLES.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 32842,
+      "sha256": "95f32dc38f0809165067fbd5421431da59136c4326cf7ab5513dca6ded9a1d7a",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/results/confirmatory_n24/RESULTS_COST_CONFIRMATORY_FULL_PRECISION.csv",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 344753,
+      "sha256": "789f54abd981ed0c591d1ca9a7c23d0b86485384c174f9f9fe86650f6dfa6d22",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/results/confirmatory_n24/SECONDARY_COST_SUMMARY_TABLE.csv",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 42244,
+      "sha256": "d80f88426a12f55e613e0a36c71de8215fed6e83d49a4112be0cba0e92b059c9",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/results/confirmatory_n24/SEED_LEDGER.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 39559,
+      "sha256": "ef0544f6fdf89542fcca8cd536916901dab0af3505d044554bab824fb0880689",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/results/confirmatory_n24/STATS_RECOMPUTED_CLI.json",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 256791,
+      "sha256": "308ba2e7a4131d2509b6615c4fba4d9cf0e95b5692b5051f134bb90ca1ed2cdc",
+      "role": "Unrounded confirmatory result CSV/JSON table"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/SAMPLE_SIZE_SENSITIVITY_COST.csv",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 1101,
+      "sha256": "a7c9a962eab370fd5a18327bbb5582128caf0bfcfe9d9859fb91335a06f5691b",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/scripts/cost_power_table.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 4253,
+      "sha256": "b422b60efd64aa8135348bc5a3452556e978529e41daa707aa17dccb790d41a1",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/scripts/postrun_verify_and_plot.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 21315,
+      "sha256": "f8ff12c645429a5da80a3867047e8a63b68dcd46994532ce5bd799190319f603",
+      "role": "Locked confirmatory experiment module"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/SEED_INDEPENDENCE_AUDIT.md",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 6170,
+      "sha256": "01ae3a22d38a8a23100c9ab3a22c16600bec3cf72a4395faea89feb52087ede7",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/slurm_cost_confirmatory_n24.sbatch",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 2306,
+      "sha256": "e710a44be911c8dead3ab16b8aad34b28d6ede7081f1ec1baa3aa192dfd0bf79",
+      "role": "Slurm batch / cluster execution script"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/SOURCE_SHA256SUMS.txt",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 2191,
+      "sha256": "86351651810c71c62c4473142d97728693e62c106f85a8ae74527dfd12b42ce1",
+      "role": "Locked design doc, manifest, hash lock, or Git hygiene config"
+    },
+    {
+      "rel_path": "robust_r2_matched_cost_confirmatory/tests/test_cost_conf_suite.py",
+      "group": "robust_r2_matched_cost_confirmatory",
+      "size_bytes": 17855,
+      "sha256": "a710efa1094160af61a139c698815134b39ecd2323cce08d5d669e14ebfc767e",
+      "role": "Pre-run automated verification suite"
+    }
+  ]
+}

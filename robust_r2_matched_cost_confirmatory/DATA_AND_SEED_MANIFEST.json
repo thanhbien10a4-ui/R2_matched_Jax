@@ -1,0 +1,1405 @@
+{
+  "status": "PRE_EXECUTION_KEY_PLAN_NO_TEST_DATA_SIMULATED",
+  "namespace": "R2_COST10_CONF_V1",
+  "cost_s": 0.001,
+  "cost_bps": 10.0,
+  "hold_eval_status": "SEALED_AND_NEVER_OPENED",
+  "prior_r2_conf_4001_4040_status": "UNTOUCHED_AND_EXCLUDED",
+  "conf_test_status": "KEYS_DERIVED_ONLY_NOT_SIMULATED_OR_OPENED",
+  "locked_primary_N": 24,
+  "locked_seeds": [
+    5001,
+    5002,
+    5003,
+    5004,
+    5005,
+    5006,
+    5007,
+    5008,
+    5009,
+    5010,
+    5011,
+    5012,
+    5013,
+    5014,
+    5015,
+    5016,
+    5017,
+    5018,
+    5019,
+    5020,
+    5021,
+    5022,
+    5023,
+    5024
+  ],
+  "unused_quarantined_pool": [
+    5025,
+    5026,
+    5027,
+    5028,
+    5029,
+    5030,
+    5031,
+    5032,
+    5033,
+    5034,
+    5035,
+    5036,
+    5037,
+    5038,
+    5039,
+    5040
+  ],
+  "tech_smoke_seed_excluded_from_analysis": 5999,
+  "eval_scenarios_locked": [
+    "fixed_015",
+    "fixed_020",
+    "fixed_025",
+    "rs_015_025",
+    "regime_switch_015_028",
+    "fixed_030"
+  ],
+  "pairing_structure": {
+    "within_seed_shared_streams": [
+      "init_policy (exact bit-identical policy MLP + idelta initialization)",
+      "train_dW['fixed_020'] & train_perm['fixed_020'] (nominal 1/4 sub-stream of both branches)",
+      "val_dW['fixed_020'] (nominal validation stream; A selects min val_020, R2 selects min mean val over 4 training scenarios)",
+      "conf_test_shared_dW (20,000 shared-dW test paths across 6 scenarios within seed, created ONLY after best_val & ep200 close)"
+    ],
+    "across_seed_and_split_disjointness": "Zero shared keys across distinct seed_labels, zero shared keys between train / val / conf_test, and direct resolution of B3's Val(s)/Train(s+1) 5,000-row dW duplication defect."
+  },
+  "prng_isolation_audit": {
+    "namespace": "R2_COST10_CONF_V1",
+    "isolation_passed": true,
+    "historical_keys_checked": 3061,
+    "new_total_ints_checked": 861,
+    "new_unique_ints_checked": 861,
+    "keys_per_seed_excluding_label": 20,
+    "smoke_seed": 5999,
+    "locked_cohort_seeds": [
+      5001,
+      5002,
+      5003,
+      5004,
+      5005,
+      5006,
+      5007,
+      5008,
+      5009,
+      5010,
+      5011,
+      5012,
+      5013,
+      5014,
+      5015,
+      5016,
+      5017,
+      5018,
+      5019,
+      5020,
+      5021,
+      5022,
+      5023,
+      5024
+    ],
+    "sealed_unused_seeds": [
+      5025,
+      5026,
+      5027,
+      5028,
+      5029,
+      5030,
+      5031,
+      5032,
+      5033,
+      5034,
+      5035,
+      5036,
+      5037,
+      5038,
+      5039,
+      5040
+    ],
+    "overflow_errors": [],
+    "internal_collision_count": 0,
+    "historical_collisions": [],
+    "b3_adjacent_val_train_collisions": [],
+    "vol_offset_cross_collisions": [],
+    "hold_eval_status": "SEALED_AND_NEVER_OPENED",
+    "prior_4001_4040_status": "UNTOUCHED_AND_EXCLUDED"
+  },
+  "seed_bundles": {
+    "5999": {
+      "seed_label": 5999,
+      "stage": "R2_COST10_TECH_SMOKE",
+      "role": "tech_smoke_only",
+      "init_policy": 806763436,
+      "train_dW": {
+        "fixed_015": 373615759,
+        "fixed_020": 1551574774,
+        "fixed_025": 229657093,
+        "rs_015_025": 822741123,
+        "fixed_020_sub0": 2122821745,
+        "fixed_020_sub2": 1891753231,
+        "fixed_020_sub3": 889823732
+      },
+      "train_perm": {
+        "fixed_015": 2090772482,
+        "fixed_020": 1266409148,
+        "fixed_025": 853689455,
+        "rs_015_025": 188364934,
+        "fixed_020_sub0": 243123119,
+        "fixed_020_sub2": 1244154441,
+        "fixed_020_sub3": 1380243174
+      },
+      "val_dW": {
+        "fixed_015": 156013008,
+        "fixed_020": 361001668,
+        "fixed_025": 1444169138,
+        "rs_015_025": 1699475797
+      },
+      "conf_test_shared_dW": 327646402
+    },
+    "5001": {
+      "seed_label": 5001,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 2052854957,
+      "train_dW": {
+        "fixed_015": 559768323,
+        "fixed_020": 1989063673,
+        "fixed_025": 195480565,
+        "rs_015_025": 1495728631,
+        "fixed_020_sub0": 710804339,
+        "fixed_020_sub2": 441275245,
+        "fixed_020_sub3": 470474
+      },
+      "train_perm": {
+        "fixed_015": 817529468,
+        "fixed_020": 606917552,
+        "fixed_025": 2035053061,
+        "rs_015_025": 1559540150,
+        "fixed_020_sub0": 278376673,
+        "fixed_020_sub2": 492458319,
+        "fixed_020_sub3": 992634917
+      },
+      "val_dW": {
+        "fixed_015": 1358585736,
+        "fixed_020": 2093230081,
+        "fixed_025": 1449597257,
+        "rs_015_025": 428300580
+      },
+      "conf_test_shared_dW": 646799286
+    },
+    "5002": {
+      "seed_label": 5002,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1270170647,
+      "train_dW": {
+        "fixed_015": 1602766278,
+        "fixed_020": 1978668850,
+        "fixed_025": 908920089,
+        "rs_015_025": 829472453,
+        "fixed_020_sub0": 1892499602,
+        "fixed_020_sub2": 1770217409,
+        "fixed_020_sub3": 207316631
+      },
+      "train_perm": {
+        "fixed_015": 1635168675,
+        "fixed_020": 1270898723,
+        "fixed_025": 1562189615,
+        "rs_015_025": 1980480315,
+        "fixed_020_sub0": 1418272967,
+        "fixed_020_sub2": 922560918,
+        "fixed_020_sub3": 572604723
+      },
+      "val_dW": {
+        "fixed_015": 1844814388,
+        "fixed_020": 846218930,
+        "fixed_025": 887226893,
+        "rs_015_025": 1617678444
+      },
+      "conf_test_shared_dW": 193745345
+    },
+    "5003": {
+      "seed_label": 5003,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1000900326,
+      "train_dW": {
+        "fixed_015": 202279923,
+        "fixed_020": 223300057,
+        "fixed_025": 1144819028,
+        "rs_015_025": 2126376491,
+        "fixed_020_sub0": 1469674165,
+        "fixed_020_sub2": 1849609482,
+        "fixed_020_sub3": 743218378
+      },
+      "train_perm": {
+        "fixed_015": 1041420774,
+        "fixed_020": 1011771294,
+        "fixed_025": 719058626,
+        "rs_015_025": 1376929934,
+        "fixed_020_sub0": 689691037,
+        "fixed_020_sub2": 635070547,
+        "fixed_020_sub3": 802786095
+      },
+      "val_dW": {
+        "fixed_015": 1367191479,
+        "fixed_020": 564065886,
+        "fixed_025": 853336124,
+        "rs_015_025": 1724515971
+      },
+      "conf_test_shared_dW": 1207666601
+    },
+    "5004": {
+      "seed_label": 5004,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1573580369,
+      "train_dW": {
+        "fixed_015": 518534682,
+        "fixed_020": 963613162,
+        "fixed_025": 1208257148,
+        "rs_015_025": 1816554246,
+        "fixed_020_sub0": 908507217,
+        "fixed_020_sub2": 147737510,
+        "fixed_020_sub3": 2042587866
+      },
+      "train_perm": {
+        "fixed_015": 1741339004,
+        "fixed_020": 117796471,
+        "fixed_025": 1807226353,
+        "rs_015_025": 1969708789,
+        "fixed_020_sub0": 311555131,
+        "fixed_020_sub2": 1488979752,
+        "fixed_020_sub3": 679793702
+      },
+      "val_dW": {
+        "fixed_015": 1582242526,
+        "fixed_020": 916919220,
+        "fixed_025": 1494705976,
+        "rs_015_025": 1279428529
+      },
+      "conf_test_shared_dW": 1201553143
+    },
+    "5005": {
+      "seed_label": 5005,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1847493728,
+      "train_dW": {
+        "fixed_015": 480149974,
+        "fixed_020": 1374942609,
+        "fixed_025": 637521314,
+        "rs_015_025": 88946924,
+        "fixed_020_sub0": 1497603690,
+        "fixed_020_sub2": 931105950,
+        "fixed_020_sub3": 555167018
+      },
+      "train_perm": {
+        "fixed_015": 2070701635,
+        "fixed_020": 1348712455,
+        "fixed_025": 1950155508,
+        "rs_015_025": 1802050477,
+        "fixed_020_sub0": 782732093,
+        "fixed_020_sub2": 636495877,
+        "fixed_020_sub3": 1272658043
+      },
+      "val_dW": {
+        "fixed_015": 953123167,
+        "fixed_020": 1880713742,
+        "fixed_025": 1719203008,
+        "rs_015_025": 1376561014
+      },
+      "conf_test_shared_dW": 1088741412
+    },
+    "5006": {
+      "seed_label": 5006,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 534864165,
+      "train_dW": {
+        "fixed_015": 1693996209,
+        "fixed_020": 765225557,
+        "fixed_025": 1966851935,
+        "rs_015_025": 1072196205,
+        "fixed_020_sub0": 578124021,
+        "fixed_020_sub2": 483048612,
+        "fixed_020_sub3": 684953760
+      },
+      "train_perm": {
+        "fixed_015": 47374396,
+        "fixed_020": 1819107786,
+        "fixed_025": 257787368,
+        "rs_015_025": 714052108,
+        "fixed_020_sub0": 11965634,
+        "fixed_020_sub2": 1300134952,
+        "fixed_020_sub3": 1318303677
+      },
+      "val_dW": {
+        "fixed_015": 194846029,
+        "fixed_020": 2120173420,
+        "fixed_025": 1486857306,
+        "rs_015_025": 1156117031
+      },
+      "conf_test_shared_dW": 133454024
+    },
+    "5007": {
+      "seed_label": 5007,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1319704572,
+      "train_dW": {
+        "fixed_015": 1313172012,
+        "fixed_020": 1992599492,
+        "fixed_025": 1239770257,
+        "rs_015_025": 319430160,
+        "fixed_020_sub0": 729401854,
+        "fixed_020_sub2": 1016097818,
+        "fixed_020_sub3": 2050607289
+      },
+      "train_perm": {
+        "fixed_015": 144797848,
+        "fixed_020": 1237374230,
+        "fixed_025": 1930827677,
+        "rs_015_025": 1973599772,
+        "fixed_020_sub0": 559588456,
+        "fixed_020_sub2": 250704863,
+        "fixed_020_sub3": 1259462028
+      },
+      "val_dW": {
+        "fixed_015": 1687941058,
+        "fixed_020": 1368997377,
+        "fixed_025": 1385566856,
+        "rs_015_025": 1809635039
+      },
+      "conf_test_shared_dW": 581244844
+    },
+    "5008": {
+      "seed_label": 5008,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1586660257,
+      "train_dW": {
+        "fixed_015": 1026040724,
+        "fixed_020": 354829780,
+        "fixed_025": 428260395,
+        "rs_015_025": 871855473,
+        "fixed_020_sub0": 1647754808,
+        "fixed_020_sub2": 1954933685,
+        "fixed_020_sub3": 1445684250
+      },
+      "train_perm": {
+        "fixed_015": 1706645071,
+        "fixed_020": 975749849,
+        "fixed_025": 1154758565,
+        "rs_015_025": 817868594,
+        "fixed_020_sub0": 1190874811,
+        "fixed_020_sub2": 235622897,
+        "fixed_020_sub3": 361326897
+      },
+      "val_dW": {
+        "fixed_015": 715950364,
+        "fixed_020": 272973702,
+        "fixed_025": 424405107,
+        "rs_015_025": 1796453907
+      },
+      "conf_test_shared_dW": 1105865583
+    },
+    "5009": {
+      "seed_label": 5009,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1383939326,
+      "train_dW": {
+        "fixed_015": 1945154918,
+        "fixed_020": 274952196,
+        "fixed_025": 1673856408,
+        "rs_015_025": 1176174329,
+        "fixed_020_sub0": 2087058370,
+        "fixed_020_sub2": 1465013173,
+        "fixed_020_sub3": 1733647241
+      },
+      "train_perm": {
+        "fixed_015": 721768047,
+        "fixed_020": 1179779731,
+        "fixed_025": 46231868,
+        "rs_015_025": 289666702,
+        "fixed_020_sub0": 2063877554,
+        "fixed_020_sub2": 1171064211,
+        "fixed_020_sub3": 667966297
+      },
+      "val_dW": {
+        "fixed_015": 1130635559,
+        "fixed_020": 577099482,
+        "fixed_025": 28061666,
+        "rs_015_025": 599075174
+      },
+      "conf_test_shared_dW": 2048878389
+    },
+    "5010": {
+      "seed_label": 5010,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 237533491,
+      "train_dW": {
+        "fixed_015": 2063872735,
+        "fixed_020": 2114469712,
+        "fixed_025": 463851784,
+        "rs_015_025": 1797217432,
+        "fixed_020_sub0": 1394958068,
+        "fixed_020_sub2": 977413222,
+        "fixed_020_sub3": 943707085
+      },
+      "train_perm": {
+        "fixed_015": 1184943952,
+        "fixed_020": 1964232602,
+        "fixed_025": 1989306846,
+        "rs_015_025": 730361211,
+        "fixed_020_sub0": 604098605,
+        "fixed_020_sub2": 801203072,
+        "fixed_020_sub3": 170705888
+      },
+      "val_dW": {
+        "fixed_015": 494725971,
+        "fixed_020": 1441046165,
+        "fixed_025": 1513271045,
+        "rs_015_025": 855581730
+      },
+      "conf_test_shared_dW": 2085010967
+    },
+    "5011": {
+      "seed_label": 5011,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1053372335,
+      "train_dW": {
+        "fixed_015": 1294187669,
+        "fixed_020": 631108682,
+        "fixed_025": 372465200,
+        "rs_015_025": 477727418,
+        "fixed_020_sub0": 600451238,
+        "fixed_020_sub2": 1607758088,
+        "fixed_020_sub3": 1816268353
+      },
+      "train_perm": {
+        "fixed_015": 100198166,
+        "fixed_020": 1244918613,
+        "fixed_025": 1829787900,
+        "rs_015_025": 601136389,
+        "fixed_020_sub0": 1617057808,
+        "fixed_020_sub2": 1133102480,
+        "fixed_020_sub3": 76366759
+      },
+      "val_dW": {
+        "fixed_015": 1109787409,
+        "fixed_020": 572728372,
+        "fixed_025": 456660906,
+        "rs_015_025": 1680019983
+      },
+      "conf_test_shared_dW": 1626284397
+    },
+    "5012": {
+      "seed_label": 5012,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 917737511,
+      "train_dW": {
+        "fixed_015": 1476445338,
+        "fixed_020": 1067377526,
+        "fixed_025": 834853589,
+        "rs_015_025": 498645662,
+        "fixed_020_sub0": 1913659408,
+        "fixed_020_sub2": 411725084,
+        "fixed_020_sub3": 2047328897
+      },
+      "train_perm": {
+        "fixed_015": 2126310979,
+        "fixed_020": 1097172928,
+        "fixed_025": 122340162,
+        "rs_015_025": 558592302,
+        "fixed_020_sub0": 1428743381,
+        "fixed_020_sub2": 255626150,
+        "fixed_020_sub3": 1522610964
+      },
+      "val_dW": {
+        "fixed_015": 1137714811,
+        "fixed_020": 1989838738,
+        "fixed_025": 894722672,
+        "rs_015_025": 1816757046
+      },
+      "conf_test_shared_dW": 1437280397
+    },
+    "5013": {
+      "seed_label": 5013,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1950990127,
+      "train_dW": {
+        "fixed_015": 1836870619,
+        "fixed_020": 256763692,
+        "fixed_025": 711474489,
+        "rs_015_025": 308699732,
+        "fixed_020_sub0": 1516069526,
+        "fixed_020_sub2": 1212902802,
+        "fixed_020_sub3": 1848040295
+      },
+      "train_perm": {
+        "fixed_015": 1959070927,
+        "fixed_020": 1828861115,
+        "fixed_025": 1667741128,
+        "rs_015_025": 492657224,
+        "fixed_020_sub0": 1474687451,
+        "fixed_020_sub2": 76448250,
+        "fixed_020_sub3": 798330173
+      },
+      "val_dW": {
+        "fixed_015": 2099922517,
+        "fixed_020": 52522337,
+        "fixed_025": 539083470,
+        "rs_015_025": 21637926
+      },
+      "conf_test_shared_dW": 1679974719
+    },
+    "5014": {
+      "seed_label": 5014,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1215932955,
+      "train_dW": {
+        "fixed_015": 382542173,
+        "fixed_020": 715609273,
+        "fixed_025": 179688252,
+        "rs_015_025": 709044433,
+        "fixed_020_sub0": 1139837348,
+        "fixed_020_sub2": 768842631,
+        "fixed_020_sub3": 1534770662
+      },
+      "train_perm": {
+        "fixed_015": 117938811,
+        "fixed_020": 652278156,
+        "fixed_025": 48006016,
+        "rs_015_025": 46984480,
+        "fixed_020_sub0": 1523417023,
+        "fixed_020_sub2": 393576241,
+        "fixed_020_sub3": 244589825
+      },
+      "val_dW": {
+        "fixed_015": 342254281,
+        "fixed_020": 1695761512,
+        "fixed_025": 1871569320,
+        "rs_015_025": 2145177981
+      },
+      "conf_test_shared_dW": 369148517
+    },
+    "5015": {
+      "seed_label": 5015,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 489166179,
+      "train_dW": {
+        "fixed_015": 1810543328,
+        "fixed_020": 920295424,
+        "fixed_025": 6092017,
+        "rs_015_025": 826628436,
+        "fixed_020_sub0": 1790047334,
+        "fixed_020_sub2": 347232212,
+        "fixed_020_sub3": 1725528497
+      },
+      "train_perm": {
+        "fixed_015": 1691259656,
+        "fixed_020": 846358881,
+        "fixed_025": 1500850427,
+        "rs_015_025": 2027953066,
+        "fixed_020_sub0": 1567959136,
+        "fixed_020_sub2": 669482687,
+        "fixed_020_sub3": 680347735
+      },
+      "val_dW": {
+        "fixed_015": 342191713,
+        "fixed_020": 1139198663,
+        "fixed_025": 1973460576,
+        "rs_015_025": 893256145
+      },
+      "conf_test_shared_dW": 312239968
+    },
+    "5016": {
+      "seed_label": 5016,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1892706174,
+      "train_dW": {
+        "fixed_015": 1699647063,
+        "fixed_020": 625352794,
+        "fixed_025": 2016176223,
+        "rs_015_025": 401987103,
+        "fixed_020_sub0": 1312044227,
+        "fixed_020_sub2": 818472025,
+        "fixed_020_sub3": 1954906754
+      },
+      "train_perm": {
+        "fixed_015": 1781639063,
+        "fixed_020": 910115247,
+        "fixed_025": 808684684,
+        "rs_015_025": 844503663,
+        "fixed_020_sub0": 1590492453,
+        "fixed_020_sub2": 927378609,
+        "fixed_020_sub3": 1123971465
+      },
+      "val_dW": {
+        "fixed_015": 107111433,
+        "fixed_020": 993655067,
+        "fixed_025": 959989672,
+        "rs_015_025": 258112996
+      },
+      "conf_test_shared_dW": 826745422
+    },
+    "5017": {
+      "seed_label": 5017,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1188808911,
+      "train_dW": {
+        "fixed_015": 1596318115,
+        "fixed_020": 1922807752,
+        "fixed_025": 1546349732,
+        "rs_015_025": 1938446986,
+        "fixed_020_sub0": 1187973428,
+        "fixed_020_sub2": 1152968155,
+        "fixed_020_sub3": 1013076605
+      },
+      "train_perm": {
+        "fixed_015": 647418447,
+        "fixed_020": 935163023,
+        "fixed_025": 1194321395,
+        "rs_015_025": 636762985,
+        "fixed_020_sub0": 1595907372,
+        "fixed_020_sub2": 1554347946,
+        "fixed_020_sub3": 862499347
+      },
+      "val_dW": {
+        "fixed_015": 801054176,
+        "fixed_020": 123257223,
+        "fixed_025": 64420308,
+        "rs_015_025": 965238884
+      },
+      "conf_test_shared_dW": 1123261461
+    },
+    "5018": {
+      "seed_label": 5018,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 714994774,
+      "train_dW": {
+        "fixed_015": 2066020020,
+        "fixed_020": 98593742,
+        "fixed_025": 899070158,
+        "rs_015_025": 867153016,
+        "fixed_020_sub0": 1755390132,
+        "fixed_020_sub2": 140535834,
+        "fixed_020_sub3": 890995747
+      },
+      "train_perm": {
+        "fixed_015": 1814608989,
+        "fixed_020": 2140172987,
+        "fixed_025": 397963103,
+        "rs_015_025": 2080692518,
+        "fixed_020_sub0": 695649665,
+        "fixed_020_sub2": 956004760,
+        "fixed_020_sub3": 194986199
+      },
+      "val_dW": {
+        "fixed_015": 1594017110,
+        "fixed_020": 1228336267,
+        "fixed_025": 1226262418,
+        "rs_015_025": 20794506
+      },
+      "conf_test_shared_dW": 1006248676
+    },
+    "5019": {
+      "seed_label": 5019,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 947992833,
+      "train_dW": {
+        "fixed_015": 1929597308,
+        "fixed_020": 1134079541,
+        "fixed_025": 215887001,
+        "rs_015_025": 644398227,
+        "fixed_020_sub0": 781300822,
+        "fixed_020_sub2": 1307584157,
+        "fixed_020_sub3": 1185632155
+      },
+      "train_perm": {
+        "fixed_015": 1957018236,
+        "fixed_020": 1790596798,
+        "fixed_025": 444437981,
+        "rs_015_025": 1568319911,
+        "fixed_020_sub0": 392599213,
+        "fixed_020_sub2": 1447127189,
+        "fixed_020_sub3": 65508181
+      },
+      "val_dW": {
+        "fixed_015": 585913210,
+        "fixed_020": 1437450149,
+        "fixed_025": 66927653,
+        "rs_015_025": 30910813
+      },
+      "conf_test_shared_dW": 852679526
+    },
+    "5020": {
+      "seed_label": 5020,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1238637493,
+      "train_dW": {
+        "fixed_015": 846800104,
+        "fixed_020": 552459110,
+        "fixed_025": 1274394906,
+        "rs_015_025": 832734903,
+        "fixed_020_sub0": 1657286608,
+        "fixed_020_sub2": 287307688,
+        "fixed_020_sub3": 1863144475
+      },
+      "train_perm": {
+        "fixed_015": 1718967928,
+        "fixed_020": 836778584,
+        "fixed_025": 953044004,
+        "rs_015_025": 1275850337,
+        "fixed_020_sub0": 371452215,
+        "fixed_020_sub2": 1620472050,
+        "fixed_020_sub3": 1633809606
+      },
+      "val_dW": {
+        "fixed_015": 1292365419,
+        "fixed_020": 573625139,
+        "fixed_025": 888161814,
+        "rs_015_025": 414878360
+      },
+      "conf_test_shared_dW": 1180947589
+    },
+    "5021": {
+      "seed_label": 5021,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 499637398,
+      "train_dW": {
+        "fixed_015": 733545487,
+        "fixed_020": 1648360436,
+        "fixed_025": 1583435872,
+        "rs_015_025": 35947756,
+        "fixed_020_sub0": 1797645707,
+        "fixed_020_sub2": 1604836616,
+        "fixed_020_sub3": 1050113682
+      },
+      "train_perm": {
+        "fixed_015": 598093752,
+        "fixed_020": 2031874106,
+        "fixed_025": 789820117,
+        "rs_015_025": 165069506,
+        "fixed_020_sub0": 1051363284,
+        "fixed_020_sub2": 1057384369,
+        "fixed_020_sub3": 1970683809
+      },
+      "val_dW": {
+        "fixed_015": 1554878176,
+        "fixed_020": 630360040,
+        "fixed_025": 1256460252,
+        "rs_015_025": 1100408999
+      },
+      "conf_test_shared_dW": 261483849
+    },
+    "5022": {
+      "seed_label": 5022,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 205175051,
+      "train_dW": {
+        "fixed_015": 16780216,
+        "fixed_020": 854168547,
+        "fixed_025": 368806640,
+        "rs_015_025": 190167134,
+        "fixed_020_sub0": 1482411274,
+        "fixed_020_sub2": 91046306,
+        "fixed_020_sub3": 1525805288
+      },
+      "train_perm": {
+        "fixed_015": 819097007,
+        "fixed_020": 1133562265,
+        "fixed_025": 1606657862,
+        "rs_015_025": 1756300673,
+        "fixed_020_sub0": 160405928,
+        "fixed_020_sub2": 1117676718,
+        "fixed_020_sub3": 2035962557
+      },
+      "val_dW": {
+        "fixed_015": 116257930,
+        "fixed_020": 1226403729,
+        "fixed_025": 1169921071,
+        "rs_015_025": 1421315592
+      },
+      "conf_test_shared_dW": 1452548147
+    },
+    "5023": {
+      "seed_label": 5023,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1856080145,
+      "train_dW": {
+        "fixed_015": 935647437,
+        "fixed_020": 1257185499,
+        "fixed_025": 1267433240,
+        "rs_015_025": 144798413,
+        "fixed_020_sub0": 1338879502,
+        "fixed_020_sub2": 408703800,
+        "fixed_020_sub3": 1773943272
+      },
+      "train_perm": {
+        "fixed_015": 287431831,
+        "fixed_020": 357060195,
+        "fixed_025": 126615134,
+        "rs_015_025": 1938527748,
+        "fixed_020_sub0": 844186478,
+        "fixed_020_sub2": 1344539998,
+        "fixed_020_sub3": 1047930191
+      },
+      "val_dW": {
+        "fixed_015": 1237673124,
+        "fixed_020": 513108252,
+        "fixed_025": 444670263,
+        "rs_015_025": 248864103
+      },
+      "conf_test_shared_dW": 383251577
+    },
+    "5024": {
+      "seed_label": 5024,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "locked_confirmatory_n24",
+      "init_policy": 1423835276,
+      "train_dW": {
+        "fixed_015": 499535580,
+        "fixed_020": 739776503,
+        "fixed_025": 430291663,
+        "rs_015_025": 8944717,
+        "fixed_020_sub0": 697345767,
+        "fixed_020_sub2": 201807783,
+        "fixed_020_sub3": 2088154222
+      },
+      "train_perm": {
+        "fixed_015": 2054243349,
+        "fixed_020": 458577688,
+        "fixed_025": 1416713009,
+        "rs_015_025": 451605392,
+        "fixed_020_sub0": 1837241964,
+        "fixed_020_sub2": 1575605426,
+        "fixed_020_sub3": 393869777
+      },
+      "val_dW": {
+        "fixed_015": 296184630,
+        "fixed_020": 1375129106,
+        "fixed_025": 1190606389,
+        "rs_015_025": 1358546494
+      },
+      "conf_test_shared_dW": 1510936884
+    },
+    "5025": {
+      "seed_label": 5025,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 57968929,
+      "train_dW": {
+        "fixed_015": 1394715549,
+        "fixed_020": 1081713351,
+        "fixed_025": 930196343,
+        "rs_015_025": 1347664099,
+        "fixed_020_sub0": 153292062,
+        "fixed_020_sub2": 661778087,
+        "fixed_020_sub3": 1037290609
+      },
+      "train_perm": {
+        "fixed_015": 1409028768,
+        "fixed_020": 1947397692,
+        "fixed_025": 1013907266,
+        "rs_015_025": 749565793,
+        "fixed_020_sub0": 626838771,
+        "fixed_020_sub2": 178919497,
+        "fixed_020_sub3": 1012070996
+      },
+      "val_dW": {
+        "fixed_015": 1453508508,
+        "fixed_020": 335436498,
+        "fixed_025": 1727849613,
+        "rs_015_025": 615304615
+      },
+      "conf_test_shared_dW": 1719844004
+    },
+    "5026": {
+      "seed_label": 5026,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 299913969,
+      "train_dW": {
+        "fixed_015": 1299346205,
+        "fixed_020": 1472178129,
+        "fixed_025": 1129008423,
+        "rs_015_025": 1285761389,
+        "fixed_020_sub0": 650149173,
+        "fixed_020_sub2": 1339233647,
+        "fixed_020_sub3": 925422302
+      },
+      "train_perm": {
+        "fixed_015": 1654782071,
+        "fixed_020": 1239179035,
+        "fixed_025": 84037109,
+        "rs_015_025": 357832466,
+        "fixed_020_sub0": 1436332869,
+        "fixed_020_sub2": 31340527,
+        "fixed_020_sub3": 303400679
+      },
+      "val_dW": {
+        "fixed_015": 1234994424,
+        "fixed_020": 242939446,
+        "fixed_025": 1901761091,
+        "rs_015_025": 500117170
+      },
+      "conf_test_shared_dW": 1689103897
+    },
+    "5027": {
+      "seed_label": 5027,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 401015562,
+      "train_dW": {
+        "fixed_015": 453983135,
+        "fixed_020": 1575500864,
+        "fixed_025": 2000245026,
+        "rs_015_025": 645658740,
+        "fixed_020_sub0": 1595210072,
+        "fixed_020_sub2": 1240323134,
+        "fixed_020_sub3": 869156412
+      },
+      "train_perm": {
+        "fixed_015": 1245836392,
+        "fixed_020": 1308140598,
+        "fixed_025": 1470520126,
+        "rs_015_025": 809305107,
+        "fixed_020_sub0": 1440870373,
+        "fixed_020_sub2": 1006586205,
+        "fixed_020_sub3": 444368221
+      },
+      "val_dW": {
+        "fixed_015": 652515888,
+        "fixed_020": 1458642684,
+        "fixed_025": 840288394,
+        "rs_015_025": 340168893
+      },
+      "conf_test_shared_dW": 1223684361
+    },
+    "5028": {
+      "seed_label": 5028,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1201080622,
+      "train_dW": {
+        "fixed_015": 677102066,
+        "fixed_020": 1644422359,
+        "fixed_025": 310890204,
+        "rs_015_025": 409197512,
+        "fixed_020_sub0": 1880940005,
+        "fixed_020_sub2": 1404848298,
+        "fixed_020_sub3": 786069316
+      },
+      "train_perm": {
+        "fixed_015": 509457308,
+        "fixed_020": 121065748,
+        "fixed_025": 1059441459,
+        "rs_015_025": 829959487,
+        "fixed_020_sub0": 1191177118,
+        "fixed_020_sub2": 2086912627,
+        "fixed_020_sub3": 1181908102
+      },
+      "val_dW": {
+        "fixed_015": 42773486,
+        "fixed_020": 111810410,
+        "fixed_025": 1687423118,
+        "rs_015_025": 1691386903
+      },
+      "conf_test_shared_dW": 1131163120
+    },
+    "5029": {
+      "seed_label": 5029,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1001092648,
+      "train_dW": {
+        "fixed_015": 1146219840,
+        "fixed_020": 168101867,
+        "fixed_025": 64692337,
+        "rs_015_025": 2048404271,
+        "fixed_020_sub0": 1620893572,
+        "fixed_020_sub2": 253006119,
+        "fixed_020_sub3": 1379867144
+      },
+      "train_perm": {
+        "fixed_015": 625019521,
+        "fixed_020": 385099772,
+        "fixed_025": 1811913157,
+        "rs_015_025": 130084403,
+        "fixed_020_sub0": 604585670,
+        "fixed_020_sub2": 1035541757,
+        "fixed_020_sub3": 1950604219
+      },
+      "val_dW": {
+        "fixed_015": 757592941,
+        "fixed_020": 832601420,
+        "fixed_025": 1884751835,
+        "rs_015_025": 1816221184
+      },
+      "conf_test_shared_dW": 2124930755
+    },
+    "5030": {
+      "seed_label": 5030,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1518687861,
+      "train_dW": {
+        "fixed_015": 590496611,
+        "fixed_020": 1939394503,
+        "fixed_025": 24218120,
+        "rs_015_025": 1835701320,
+        "fixed_020_sub0": 1527849973,
+        "fixed_020_sub2": 1993312911,
+        "fixed_020_sub3": 129285016
+      },
+      "train_perm": {
+        "fixed_015": 1087848387,
+        "fixed_020": 908575865,
+        "fixed_025": 937467602,
+        "rs_015_025": 251293203,
+        "fixed_020_sub0": 1909820853,
+        "fixed_020_sub2": 131786406,
+        "fixed_020_sub3": 218892192
+      },
+      "val_dW": {
+        "fixed_015": 1453267178,
+        "fixed_020": 1257256524,
+        "fixed_025": 1390741457,
+        "rs_015_025": 572501407
+      },
+      "conf_test_shared_dW": 1502721034
+    },
+    "5031": {
+      "seed_label": 5031,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1761462217,
+      "train_dW": {
+        "fixed_015": 221301946,
+        "fixed_020": 827619047,
+        "fixed_025": 911033496,
+        "rs_015_025": 335455527,
+        "fixed_020_sub0": 1512446085,
+        "fixed_020_sub2": 963969788,
+        "fixed_020_sub3": 909681384
+      },
+      "train_perm": {
+        "fixed_015": 2063939402,
+        "fixed_020": 69019518,
+        "fixed_025": 881291817,
+        "rs_015_025": 966063305,
+        "fixed_020_sub0": 653093720,
+        "fixed_020_sub2": 1572827226,
+        "fixed_020_sub3": 119229885
+      },
+      "val_dW": {
+        "fixed_015": 1749408122,
+        "fixed_020": 339943244,
+        "fixed_025": 2006009450,
+        "rs_015_025": 340760578
+      },
+      "conf_test_shared_dW": 28821655
+    },
+    "5032": {
+      "seed_label": 5032,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 736398757,
+      "train_dW": {
+        "fixed_015": 335921351,
+        "fixed_020": 1984726569,
+        "fixed_025": 1776792868,
+        "rs_015_025": 1786757904,
+        "fixed_020_sub0": 1863066294,
+        "fixed_020_sub2": 887586267,
+        "fixed_020_sub3": 111011719
+      },
+      "train_perm": {
+        "fixed_015": 143469426,
+        "fixed_020": 680672201,
+        "fixed_025": 100374815,
+        "rs_015_025": 1626700301,
+        "fixed_020_sub0": 709157037,
+        "fixed_020_sub2": 753970311,
+        "fixed_020_sub3": 201316202
+      },
+      "val_dW": {
+        "fixed_015": 1146044278,
+        "fixed_020": 1900950814,
+        "fixed_025": 143521622,
+        "rs_015_025": 1127493585
+      },
+      "conf_test_shared_dW": 2095142820
+    },
+    "5033": {
+      "seed_label": 5033,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 143224468,
+      "train_dW": {
+        "fixed_015": 751146830,
+        "fixed_020": 786042036,
+        "fixed_025": 1240039154,
+        "rs_015_025": 1666703269,
+        "fixed_020_sub0": 1872850394,
+        "fixed_020_sub2": 1136139267,
+        "fixed_020_sub3": 1235720019
+      },
+      "train_perm": {
+        "fixed_015": 2087026923,
+        "fixed_020": 860875921,
+        "fixed_025": 882091502,
+        "rs_015_025": 137900576,
+        "fixed_020_sub0": 1012445858,
+        "fixed_020_sub2": 1204161281,
+        "fixed_020_sub3": 1324530845
+      },
+      "val_dW": {
+        "fixed_015": 1437760346,
+        "fixed_020": 1211150599,
+        "fixed_025": 121387762,
+        "rs_015_025": 1299728479
+      },
+      "conf_test_shared_dW": 279801835
+    },
+    "5034": {
+      "seed_label": 5034,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1521556802,
+      "train_dW": {
+        "fixed_015": 2013975270,
+        "fixed_020": 1954356984,
+        "fixed_025": 577897920,
+        "rs_015_025": 1146761581,
+        "fixed_020_sub0": 722131850,
+        "fixed_020_sub2": 156599570,
+        "fixed_020_sub3": 1063449039
+      },
+      "train_perm": {
+        "fixed_015": 2027107788,
+        "fixed_020": 2009112196,
+        "fixed_025": 1590092151,
+        "rs_015_025": 842542596,
+        "fixed_020_sub0": 435750200,
+        "fixed_020_sub2": 58994305,
+        "fixed_020_sub3": 1485329262
+      },
+      "val_dW": {
+        "fixed_015": 2089501572,
+        "fixed_020": 158058298,
+        "fixed_025": 1808643118,
+        "rs_015_025": 1636850415
+      },
+      "conf_test_shared_dW": 58716365
+    },
+    "5035": {
+      "seed_label": 5035,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 205266823,
+      "train_dW": {
+        "fixed_015": 229388432,
+        "fixed_020": 321475337,
+        "fixed_025": 949862014,
+        "rs_015_025": 1996612919,
+        "fixed_020_sub0": 233818503,
+        "fixed_020_sub2": 1232123662,
+        "fixed_020_sub3": 2126322700
+      },
+      "train_perm": {
+        "fixed_015": 48140259,
+        "fixed_020": 1686620004,
+        "fixed_025": 920589645,
+        "rs_015_025": 818739409,
+        "fixed_020_sub0": 1411489247,
+        "fixed_020_sub2": 1686475176,
+        "fixed_020_sub3": 1961797878
+      },
+      "val_dW": {
+        "fixed_015": 1815815535,
+        "fixed_020": 840281669,
+        "fixed_025": 1944295119,
+        "rs_015_025": 1692411543
+      },
+      "conf_test_shared_dW": 2112615904
+    },
+    "5036": {
+      "seed_label": 5036,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1256702042,
+      "train_dW": {
+        "fixed_015": 1246782114,
+        "fixed_020": 1021554704,
+        "fixed_025": 534779694,
+        "rs_015_025": 1434226149,
+        "fixed_020_sub0": 749782005,
+        "fixed_020_sub2": 246702358,
+        "fixed_020_sub3": 437172469
+      },
+      "train_perm": {
+        "fixed_015": 851189843,
+        "fixed_020": 814449723,
+        "fixed_025": 1927768968,
+        "rs_015_025": 353012161,
+        "fixed_020_sub0": 1273538465,
+        "fixed_020_sub2": 1041825450,
+        "fixed_020_sub3": 1013926621
+      },
+      "val_dW": {
+        "fixed_015": 1771876262,
+        "fixed_020": 529626656,
+        "fixed_025": 1588158090,
+        "rs_015_025": 1650007067
+      },
+      "conf_test_shared_dW": 81206723
+    },
+    "5037": {
+      "seed_label": 5037,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 46828575,
+      "train_dW": {
+        "fixed_015": 1175911781,
+        "fixed_020": 1947905134,
+        "fixed_025": 404086168,
+        "rs_015_025": 903805694,
+        "fixed_020_sub0": 1733257632,
+        "fixed_020_sub2": 1826132351,
+        "fixed_020_sub3": 122781945
+      },
+      "train_perm": {
+        "fixed_015": 794773701,
+        "fixed_020": 1648495599,
+        "fixed_025": 729296211,
+        "rs_015_025": 56706004,
+        "fixed_020_sub0": 732798593,
+        "fixed_020_sub2": 1561296457,
+        "fixed_020_sub3": 1539958958
+      },
+      "val_dW": {
+        "fixed_015": 2138158269,
+        "fixed_020": 1501488203,
+        "fixed_025": 1849883869,
+        "rs_015_025": 1648541156
+      },
+      "conf_test_shared_dW": 1395644817
+    },
+    "5038": {
+      "seed_label": 5038,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1850679608,
+      "train_dW": {
+        "fixed_015": 986038821,
+        "fixed_020": 602802358,
+        "fixed_025": 65602313,
+        "rs_015_025": 1121588280,
+        "fixed_020_sub0": 192582511,
+        "fixed_020_sub2": 194511289,
+        "fixed_020_sub3": 796139351
+      },
+      "train_perm": {
+        "fixed_015": 1326435638,
+        "fixed_020": 1697964393,
+        "fixed_025": 1191391953,
+        "rs_015_025": 703827268,
+        "fixed_020_sub0": 1173430661,
+        "fixed_020_sub2": 402131524,
+        "fixed_020_sub3": 529801705
+      },
+      "val_dW": {
+        "fixed_015": 243856788,
+        "fixed_020": 1346803551,
+        "fixed_025": 867483152,
+        "rs_015_025": 206130310
+      },
+      "conf_test_shared_dW": 681044307
+    },
+    "5039": {
+      "seed_label": 5039,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 1805658191,
+      "train_dW": {
+        "fixed_015": 2040953513,
+        "fixed_020": 953182769,
+        "fixed_025": 1959685026,
+        "rs_015_025": 504051189,
+        "fixed_020_sub0": 724489046,
+        "fixed_020_sub2": 1149805479,
+        "fixed_020_sub3": 2111616643
+      },
+      "train_perm": {
+        "fixed_015": 1592248978,
+        "fixed_020": 70178387,
+        "fixed_025": 1028294352,
+        "rs_015_025": 34280145,
+        "fixed_020_sub0": 1374253004,
+        "fixed_020_sub2": 804879285,
+        "fixed_020_sub3": 1945441923
+      },
+      "val_dW": {
+        "fixed_015": 625505464,
+        "fixed_020": 191352952,
+        "fixed_025": 805054879,
+        "rs_015_025": 1589462939
+      },
+      "conf_test_shared_dW": 2094359371
+    },
+    "5040": {
+      "seed_label": 5040,
+      "stage": "R2_COST10_CONF_RUN",
+      "role": "reserved_unused_quarantined",
+      "init_policy": 963325008,
+      "train_dW": {
+        "fixed_015": 52440997,
+        "fixed_020": 1655450137,
+        "fixed_025": 2083717320,
+        "rs_015_025": 1777980023,
+        "fixed_020_sub0": 1624445303,
+        "fixed_020_sub2": 409474939,
+        "fixed_020_sub3": 1540951639
+      },
+      "train_perm": {
+        "fixed_015": 106155200,
+        "fixed_020": 1139312519,
+        "fixed_025": 1743088993,
+        "rs_015_025": 862024043,
+        "fixed_020_sub0": 576718693,
+        "fixed_020_sub2": 558255232,
+        "fixed_020_sub3": 1374584180
+      },
+      "val_dW": {
+        "fixed_015": 257081153,
+        "fixed_020": 729617739,
+        "fixed_025": 695304477,
+        "rs_015_025": 206866992
+      },
+      "conf_test_shared_dW": 1608986489
+    }
+  }
+}

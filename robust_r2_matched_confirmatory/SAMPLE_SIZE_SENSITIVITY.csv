@@ -1,0 +1,97 @@
+alpha_one_sided,regime_id,assumption_note,mu_A_dHE030,sd_A_dHE030,mu_B_dOCE020,eps_B,margin_B_eps_minus_muB,sd_B_dOCE020,rho_AB,N_seeds,power_A_exact_nct,power_B_exact_nct,joint_power_frechet_lower_bound,joint_power_indep_approx,joint_power_mc_bivariate,N_req_A_90pct,N_req_B_80pct,N_req_B_90pct
+0.025,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,12,1.0,0.99999,0.99999,0.99999,1.0,4,5,5
+0.025,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,16,1.0,1.0,1.0,1.0,1.0,4,5,5
+0.025,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,20,1.0,1.0,1.0,1.0,1.0,4,5,5
+0.025,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,24,1.0,1.0,1.0,1.0,1.0,4,5,5
+0.025,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,30,1.0,1.0,1.0,1.0,1.0,4,5,5
+0.025,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,36,1.0,1.0,1.0,1.0,1.0,4,5,5
+0.025,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,12,1.0,0.99149,0.99149,0.99149,0.99158,4,7,8
+0.025,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,16,1.0,0.99931,0.99931,0.99931,0.99932,4,7,8
+0.025,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,20,1.0,0.99995,0.99995,0.99995,0.9999,4,7,8
+0.025,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,24,1.0,1.0,1.0,1.0,1.0,4,7,8
+0.025,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,30,1.0,1.0,1.0,1.0,1.0,4,7,8
+0.025,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,36,1.0,1.0,1.0,1.0,1.0,4,7,8
+0.025,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,12,0.99999,0.91888,0.91887,0.91887,0.91973,5,10,12
+0.025,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,16,1.0,0.97833,0.97833,0.97833,0.97903,5,10,12
+0.025,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,20,1.0,0.99473,0.99473,0.99473,0.99443,5,10,12
+0.025,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,24,1.0,0.99881,0.99881,0.99881,0.99893,5,10,12
+0.025,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,30,1.0,0.99988,0.99988,0.99988,0.99987,5,10,12
+0.025,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,36,1.0,0.99999,0.99999,0.99999,1.0,5,10,12
+0.025,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,12,0.99999,0.91888,0.91887,0.91887,0.91947,5,10,12
+0.025,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,16,1.0,0.97833,0.97833,0.97833,0.97827,5,10,12
+0.025,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,20,1.0,0.99473,0.99473,0.99473,0.99523,5,10,12
+0.025,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,24,1.0,0.99881,0.99881,0.99881,0.99877,5,10,12
+0.025,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,30,1.0,0.99988,0.99988,0.99988,0.9999,5,10,12
+0.025,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,36,1.0,0.99999,0.99999,0.99999,1.0,5,10,12
+0.025,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,12,0.99999,0.91888,0.91887,0.91887,0.91698,5,10,12
+0.025,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,16,1.0,0.97833,0.97833,0.97833,0.97753,5,10,12
+0.025,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,20,1.0,0.99473,0.99473,0.99473,0.99438,5,10,12
+0.025,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,24,1.0,0.99881,0.99881,0.99881,0.99868,5,10,12
+0.025,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,30,1.0,0.99988,0.99988,0.99988,0.9999,5,10,12
+0.025,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,36,1.0,0.99999,0.99999,0.99999,0.99998,5,10,12
+0.025,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,12,0.9918,0.7382,0.72999,0.73214,0.73435,8,14,18
+0.025,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,16,0.99934,0.86805,0.86739,0.86748,0.869,8,14,18
+0.025,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,20,0.99995,0.93714,0.9371,0.9371,0.93607,8,14,18
+0.025,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,24,1.0,0.97135,0.97134,0.97134,0.97255,8,14,18
+0.025,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,30,1.0,0.99173,0.99173,0.99173,0.99137,8,14,18
+0.025,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,36,1.0,0.99776,0.99776,0.99776,0.99765,8,14,18
+0.025,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,12,0.96508,0.63161,0.59668,0.60955,0.61142,10,17,22
+0.025,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,16,0.99404,0.77607,0.77011,0.77145,0.7726,10,17,22
+0.025,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,20,0.9991,0.86956,0.86866,0.86877,0.86717,10,17,22
+0.025,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,24,0.99987,0.92656,0.92643,0.92644,0.92713,10,17,22
+0.025,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,30,0.99999,0.97051,0.97051,0.97051,0.97027,10,17,22
+0.025,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,36,1.0,0.98873,0.98873,0.98873,0.9892,10,17,22
+0.025,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,12,0.71366,0.35264,0.06629,0.25166,0.22392,19,34,44
+0.025,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,16,0.84842,0.46481,0.31323,0.39435,0.3677,19,34,44
+0.025,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,20,0.9239,0.56448,0.48838,0.52153,0.50545,19,34,44
+0.025,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,24,0.96334,0.65038,0.61373,0.62654,0.62015,19,34,44
+0.025,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,30,0.98848,0.75396,0.74244,0.74527,0.74902,19,34,44
+0.025,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,36,0.99658,0.83067,0.82725,0.82783,0.82685,19,34,44
+0.05,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,12,1.0,1.0,1.0,1.0,1.0,4,4,4
+0.05,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,16,1.0,1.0,1.0,1.0,1.0,4,4,4
+0.05,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,20,1.0,1.0,1.0,1.0,1.0,4,4,4
+0.05,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,24,1.0,1.0,1.0,1.0,1.0,4,4,4
+0.05,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,30,1.0,1.0,1.0,1.0,1.0,4,4,4
+0.05,R1_LR_DECAY_PointEst,Near 3-seed LR_DECAY point estimate (optimistic variance),-0.0048,0.0008,0.0,0.0001,0.0001,5e-05,0.0,36,1.0,1.0,1.0,1.0,1.0,4,4,4
+0.05,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,12,1.0,0.99769,0.99769,0.99769,0.99738,4,5,7
+0.05,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,16,1.0,0.99986,0.99986,0.99986,0.9998,4,5,7
+0.05,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,20,1.0,0.99999,0.99999,0.99999,1.0,4,5,7
+0.05,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,24,1.0,1.0,1.0,1.0,1.0,4,5,7
+0.05,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,30,1.0,1.0,1.0,1.0,1.0,4,5,7
+0.05,R2_Realistic_Base,Mild nominal degradation (+0.10 bp) & moderate SD_B=0.000065,-0.0038,0.0012,1e-05,0.0001,9e-05,6.5e-05,0.0,36,1.0,1.0,1.0,1.0,1.0,4,5,7
+0.05,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,12,1.0,0.96487,0.96487,0.96487,0.9658,4,7,10
+0.05,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,16,1.0,0.99222,0.99222,0.99222,0.99232,4,7,10
+0.05,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,20,1.0,0.9984,0.9984,0.9984,0.99812,4,7,10
+0.05,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,24,1.0,0.99969,0.99969,0.99969,0.99967,4,7,10
+0.05,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,30,1.0,0.99997,0.99997,0.99997,1.0,4,7,10
+0.05,R3_Conservative_Design,"Design assumption: +0.20 bp OCE cost, SD_B=0.000075 (1.6x 3-seed DECAY SD)",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.0,36,1.0,1.0,1.0,1.0,1.0,4,7,10
+0.05,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,12,1.0,0.96487,0.96487,0.96487,0.96458,4,7,10
+0.05,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,16,1.0,0.99222,0.99222,0.99222,0.99223,4,7,10
+0.05,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,20,1.0,0.9984,0.9984,0.9984,0.9986,4,7,10
+0.05,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,24,1.0,0.99969,0.99969,0.99969,0.99962,4,7,10
+0.05,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,30,1.0,0.99997,0.99997,0.99997,1.0,4,7,10
+0.05,R4_NegCorr_Conservative,"Conservative design with adversarial rho(dHE, dOCE)=-0.30",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,-0.3,36,1.0,1.0,1.0,1.0,1.0,4,7,10
+0.05,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,12,1.0,0.96487,0.96487,0.96487,0.96327,4,7,10
+0.05,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,16,1.0,0.99222,0.99222,0.99222,0.99227,4,7,10
+0.05,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,20,1.0,0.9984,0.9984,0.9984,0.99827,4,7,10
+0.05,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,24,1.0,0.99969,0.99969,0.99969,0.99963,4,7,10
+0.05,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,30,1.0,0.99997,0.99997,0.99997,0.99998,4,7,10
+0.05,R5_PosCorr_Conservative,"Conservative design with positive rho(dHE, dOCE)=+0.40",-0.003,0.0015,2e-05,0.0001,8e-05,7.5e-05,0.4,36,1.0,1.0,1.0,1.0,1.0,4,7,10
+0.05,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,12,0.99779,0.84758,0.84537,0.84571,0.84635,7,11,15
+0.05,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,16,0.99986,0.9326,0.93246,0.93247,0.93313,7,11,15
+0.05,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,20,0.99999,0.97145,0.97144,0.97144,0.97153,7,11,15
+0.05,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,24,1.0,0.98831,0.98831,0.98831,0.98917,7,11,15
+0.05,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,30,1.0,0.99709,0.99709,0.99709,0.99703,7,11,15
+0.05,R6_HighDrift_Stress,"Small remaining margin (mu_B=+0.30 bp, margin=0.70 bp), SD_B=0.000085",-0.0025,0.0018,3e-05,0.0001,7e-05,8.5e-05,0.0,36,1.0,0.99931,0.99931,0.99931,0.99937,7,11,15
+0.05,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,12,0.98743,0.76275,0.75018,0.75316,0.75545,8,14,18
+0.05,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,16,0.99828,0.87061,0.86888,0.86911,0.87088,8,14,18
+0.05,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,20,0.99978,0.9317,0.93148,0.9315,0.93032,8,14,18
+0.05,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,24,0.99997,0.96488,0.96486,0.96486,0.96625,8,14,18
+0.05,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,30,1.0,0.98756,0.98756,0.98756,0.98752,8,14,18
+0.05,R7_HeavyVariance_FIXEDlike,Stress SD_B=0.000110 (closer to FIXED multi-seed dispersion),-0.003,0.0025,2e-05,0.0001,8e-05,0.00011,0.0,36,1.0,0.99576,0.99576,0.99576,0.99558,8,14,18
+0.05,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,12,0.82898,0.49188,0.32087,0.40776,0.38338,15,27,36
+0.05,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,16,0.92013,0.60403,0.52416,0.55579,0.54043,15,27,36
+0.05,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,20,0.96417,0.69515,0.65932,0.67024,0.66177,15,27,36
+0.05,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,24,0.98444,0.76778,0.75222,0.75584,0.75422,15,27,36
+0.05,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,30,0.99575,0.84825,0.84401,0.84465,0.84787,15,27,36
+0.05,R8_Worst_40pctMargin_FIXEDsd,Extreme stress: mu_B=+0.40 bp (margin=0.60 bp) & SD_B=0.000120,-0.002,0.0025,4e-05,0.0001,6e-05,0.00012,-0.3,36,0.99889,0.90257,0.90147,0.90158,0.90163,15,27,36

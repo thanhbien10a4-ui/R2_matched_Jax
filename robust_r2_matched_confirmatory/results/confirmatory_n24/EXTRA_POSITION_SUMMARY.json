@@ -1,0 +1,86 @@
+[
+  {
+    "ckpt_kind": "best_val",
+    "scenario": "fixed_015",
+    "A_max_abs_delta_mean": 1.7413552800814311,
+    "R2_max_abs_delta_mean": 1.644576330979665,
+    "delta_max_abs_delta_mean": -0.09677894910176595
+  },
+  {
+    "ckpt_kind": "best_val",
+    "scenario": "fixed_020",
+    "A_max_abs_delta_mean": 2.199968879421552,
+    "R2_max_abs_delta_mean": 2.0620975146691003,
+    "delta_max_abs_delta_mean": -0.13787136475245157
+  },
+  {
+    "ckpt_kind": "best_val",
+    "scenario": "fixed_025",
+    "A_max_abs_delta_mean": 2.6918974916140237,
+    "R2_max_abs_delta_mean": 2.5069938600063324,
+    "delta_max_abs_delta_mean": -0.18490363160769144
+  },
+  {
+    "ckpt_kind": "best_val",
+    "scenario": "rs_015_025",
+    "A_max_abs_delta_mean": 2.2352774689594903,
+    "R2_max_abs_delta_mean": 2.086515704790751,
+    "delta_max_abs_delta_mean": -0.14876176416873932
+  },
+  {
+    "ckpt_kind": "best_val",
+    "scenario": "regime_switch_015_028",
+    "A_max_abs_delta_mean": 2.4056450724601746,
+    "R2_max_abs_delta_mean": 2.2388073801994324,
+    "delta_max_abs_delta_mean": -0.1668376922607422
+  },
+  {
+    "ckpt_kind": "best_val",
+    "scenario": "fixed_030",
+    "A_max_abs_delta_mean": 3.2605744699637094,
+    "R2_max_abs_delta_mean": 3.040076116720835,
+    "delta_max_abs_delta_mean": -0.22049835324287415
+  },
+  {
+    "ckpt_kind": "ep200",
+    "scenario": "fixed_015",
+    "A_max_abs_delta_mean": 1.7421933660904567,
+    "R2_max_abs_delta_mean": 1.6464441418647766,
+    "delta_max_abs_delta_mean": -0.09574922422568004
+  },
+  {
+    "ckpt_kind": "ep200",
+    "scenario": "fixed_020",
+    "A_max_abs_delta_mean": 2.1968653748432794,
+    "R2_max_abs_delta_mean": 2.0631795823574066,
+    "delta_max_abs_delta_mean": -0.1336857924858729
+  },
+  {
+    "ckpt_kind": "ep200",
+    "scenario": "fixed_025",
+    "A_max_abs_delta_mean": 2.7024700244267783,
+    "R2_max_abs_delta_mean": 2.506619562705358,
+    "delta_max_abs_delta_mean": -0.1958504617214203
+  },
+  {
+    "ckpt_kind": "ep200",
+    "scenario": "rs_015_025",
+    "A_max_abs_delta_mean": 2.229650134841601,
+    "R2_max_abs_delta_mean": 2.0865046977996826,
+    "delta_max_abs_delta_mean": -0.14314543704191843
+  },
+  {
+    "ckpt_kind": "ep200",
+    "scenario": "regime_switch_015_028",
+    "A_max_abs_delta_mean": 2.396955112616221,
+    "R2_max_abs_delta_mean": 2.2379931608835855,
+    "delta_max_abs_delta_mean": -0.1589619517326355
+  },
+  {
+    "ckpt_kind": "ep200",
+    "scenario": "fixed_030",
+    "A_max_abs_delta_mean": 3.3749762872854867,
+    "R2_max_abs_delta_mean": 3.049379219611486,
+    "delta_max_abs_delta_mean": -0.32559706767400104
+  }
+]

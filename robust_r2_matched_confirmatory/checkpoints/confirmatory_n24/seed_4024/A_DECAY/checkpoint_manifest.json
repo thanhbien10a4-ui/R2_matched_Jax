@@ -1,0 +1,10 @@
+{
+  "config_name": "A_DECAY",
+  "seed_label": 4024,
+  "best_epoch": 145,
+  "best_epoch_if_val020_only": 145,
+  "best_ckpt_file": "best_val.pkl",
+  "best_deduplicated_to_epoch_snap": false,
+  "final_with_opt_file": "final_with_opt.pkl",
+  "saved_epoch_snaps": {}
+}

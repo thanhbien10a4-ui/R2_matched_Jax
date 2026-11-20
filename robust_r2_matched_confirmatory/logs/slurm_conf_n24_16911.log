@@ -1,0 +1,391 @@
+=== NODE & ENV CHECK AT Thu 19 Nov 2026 11:32:23 PM +07 ===
+dgx02
+-rw-rw-r-- 1 user04 user04 32 Nov 16 10:17 /home/user04/deephedging_jax_training_optimization/experiments/jax_ntbn_7notebooks_original_scale/PAUSE_COORDINATOR
+JAX: 0.4.34 Devices: [CpuDevice(id=0)]
+=== LOCKED PRE-RUN SHA-256 VERIFICATION ===
+2595caf85d7f3d6197f2d6279fec36989c46ca93233d2480515e4228b1ac0c89  R2_MATCHED_CONFIRMATORY_DESIGN_LOCK.md
+564c441de11a56272aad8e5d004f1d255a5b74558561a6ef6cd620e5cf88949d  SAMPLE_SIZE_SENSITIVITY.csv
+796adea1a6223359e59d54c0110ad30c5c015ecc1c7f310af651bd18a988833c  DATA_AND_SEED_PLAN.json
+9281e5328a8037af6349a75bfe65d6668fe1cbd24e75c4fc484af05edc835e21  conf_keys.py
+a1e4f1bcda7d6e65a25ce284ec54defc677e98a7bf0be3cf32a5ff6d6c7c54cd  conf_design.py
+05f7184378772fd78024a85fde662084ee020afed9d38841a79102ee03fa574b  conf_stats.py
+9374623adfa0533307a9ca988bbecdde24ca342c05b9c2288add37f0404e6c5d  conf_run.py
+e5766e020a0caa07c4a8889c45b2b51ca42033f1225e89338b0eb80b341822b7  scripts/sample_size_and_power.py
+6f6dd730edc89534cbd92f739da63ffc11e1c82baf16b925c8c97fa36a98bc21  tests/test_conf_suite.py
+2759f098522467f5809cb8d00386ab2d6bad16589dcb93cbbc38fc540fcc39f3  ../robust_r3_lr_stability/lr_train.py
+7d856f2adf2fc89b7d7d8e9364f846bba5f9fad64cec5e4a5db593e56c0b519e  ../robust_r3_lr_stability/lr_schedule.py
+586049076d5cfc3865842a31ae3fc9e14b890a96d0e5976be9b4e3a7d2c82d6b  ../robust_r3_lr_stability/lr_keys.py
+4f3c5155e21c1bf0dce84661b85935b5f3838b88641691cccf4e0f5eb7fc3f56  ../robust_r3_budget_control/bc_models.py
+cf391002e10af3e785f5e1189ac5999189603840f39f2eeee31abe1732c0799e  ../robust_r3_dev/r3_models.py
+601795002691fef55c84da447fac1cd47b4da96584349cb6e75605f2a4552a2f  ../robust_r3_dev/r3_metrics.py
+3b5dd6b8e349f877baaec0cb48cfeb444b0e3c2a85d5151b74e1a5d2609f7aa6  ../robust_r3_dev/r3_train.py
+b02bf07e0191039a3885f2bad47475a3d611a8ee4cd13d1f63f8fff3fa04815a  ../robust_r3_dev/r3_keys.py
+=== FINAL PRE-RUN UNIT TESTS & DRY RUN ===
+PASS: test_prng_key_isolation_and_no_test_data
+PASS: test_locked_design_budget_and_schedule
+PASS: test_metric_exact_definitions_synthetic
+PASS: test_synthetic_confirmatory_iut_pass_fail_and_ledger
+PASS: test_nonparametric_exact_sign_and_wilcoxon
+{
+  "mode": "dry_run",
+  "test_sets_4001_4040_status": "NOT_GENERATED_AND_NEVER_OPENED",
+  "hold_eval_status": "SEALED_AND_NEVER_OPENED",
+  "isolation": {
+    "namespace": "R2_MATCHED_CONF_V1",
+    "isolation_passed": true,
+    "historical_keys_checked": 2167,
+    "new_keys_checked": 861,
+    "reserved_conf_seeds": [
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021,
+      4022,
+      4023,
+      4024,
+      4025,
+      4026,
+      4027,
+      4028,
+      4029,
+      4030,
+      4031,
+      4032,
+      4033,
+      4034,
+      4035,
+      4036,
+      4037,
+      4038,
+      4039,
+      4040
+    ],
+    "tech_smoke_seed": 3999,
+    "keys_per_seed": 21,
+    "overflow_errors": [],
+    "internal_collision_count": 0,
+    "historical_collisions": [],
+    "hold_eval_status": "SEALED_AND_NEVER_OPENED"
+  },
+  "spec": {
+    "branches": [
+      "A_DECAY",
+      "R2_DECAY"
+    ],
+    "branch_to_canonical": {
+      "A_DECAY": "A_ref_128",
+      "R2_DECAY": "R2_matched_128"
+    },
+    "training_scenarios": [
+      "fixed_015",
+      "fixed_020",
+      "fixed_025",
+      "rs_015_025"
+    ],
+    "conf_eval_scenarios": [
+      "fixed_015",
+      "fixed_020",
+      "fixed_025",
+      "rs_015_025",
+      "regime_switch_015_028",
+      "fixed_030"
+    ],
+    "primary_scenarios": [
+      "fixed_030",
+      "fixed_020"
+    ],
+    "secondary_scenarios": [
+      "fixed_015",
+      "fixed_025",
+      "rs_015_025",
+      "regime_switch_015_028"
+    ],
+    "train_paths_per_scenario": 5000,
+    "val_paths_per_scenario": 5000,
+    "conf_test_paths_per_scenario": 20000,
+    "budget": {
+      "epochs": 200,
+      "steps_per_epoch": 156,
+      "total_update_steps": 31200,
+      "paths_per_step": 128,
+      "total_processed_paths": 3993600
+    },
+    "optimizer": {
+      "name": "Adam",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-07,
+      "schedule": "constant_then_cosine_decay",
+      "lr_max": 0.001,
+      "lr_min": 0.0001,
+      "t_const_steps": 15600,
+      "t_total_steps": 31200,
+      "lr_step_0": 0.001,
+      "lr_step_15600": 0.001,
+      "lr_step_31200": 0.0001
+    },
+    "environment": {
+      "cost_s_A": 0.0,
+      "cost_s_R2": 0.0,
+      "steps": 20,
+      "normalize_batch_mean": true
+    },
+    "statistical_protocol": {
+      "design": "paired_by_seed_label",
+      "alpha_one_sided": 0.025,
+      "ci_two_sided_level": 0.95,
+      "eps_noninferiority_oce020": 0.0001,
+      "primary_n_seeds": 24,
+      "fallback_n_seeds": 16,
+      "joint_rule": "Berger_IUT (reject H0a at alpha=0.025 AND reject H0b at alpha=0.025)"
+    }
+  },
+  "param_parity": {
+    "A_DECAY": {
+      "policy_dense_params": 6761,
+      "policy_idelta_params": 1,
+      "policy_total_params": 6762,
+      "oce_y_params": 1,
+      "oce_y0_params": 1,
+      "oce_total_params": 2,
+      "grand_total_params": 6764
+    },
+    "R2_DECAY": {
+      "policy_dense_params": 6761,
+      "policy_idelta_params": 1,
+      "policy_total_params": 6762,
+      "oce_y_params": 4,
+      "oce_y0_params": 4,
+      "oce_total_params": 8,
+      "grand_total_params": 6770
+    },
+    "max_policy_init_diff_dummy": 0.0
+  },
+  "source_sha256": {
+    "robust_r2_matched_confirmatory/R2_MATCHED_CONFIRMATORY_DESIGN_LOCK.md": "2595caf85d7f3d6197f2d6279fec36989c46ca93233d2480515e4228b1ac0c89",
+    "robust_r2_matched_confirmatory/SAMPLE_SIZE_SENSITIVITY.csv": "564c441de11a56272aad8e5d004f1d255a5b74558561a6ef6cd620e5cf88949d",
+    "robust_r2_matched_confirmatory/conf_keys.py": "9281e5328a8037af6349a75bfe65d6668fe1cbd24e75c4fc484af05edc835e21",
+    "robust_r2_matched_confirmatory/conf_design.py": "a1e4f1bcda7d6e65a25ce284ec54defc677e98a7bf0be3cf32a5ff6d6c7c54cd",
+    "robust_r2_matched_confirmatory/conf_stats.py": "05f7184378772fd78024a85fde662084ee020afed9d38841a79102ee03fa574b",
+    "robust_r2_matched_confirmatory/conf_run.py": "9374623adfa0533307a9ca988bbecdde24ca342c05b9c2288add37f0404e6c5d",
+    "robust_r2_matched_confirmatory/scripts/sample_size_and_power.py": "e5766e020a0caa07c4a8889c45b2b51ca42033f1225e89338b0eb80b341822b7",
+    "robust_r2_matched_confirmatory/tests/test_conf_suite.py": "6f6dd730edc89534cbd92f739da63ffc11e1c82baf16b925c8c97fa36a98bc21",
+    "robust_r2_matched_confirmatory/DATA_AND_SEED_PLAN.json": "796adea1a6223359e59d54c0110ad30c5c015ecc1c7f310af651bd18a988833c",
+    "robust_r3_lr_stability/lr_train.py": "2759f098522467f5809cb8d00386ab2d6bad16589dcb93cbbc38fc540fcc39f3",
+    "robust_r3_lr_stability/lr_schedule.py": "7d856f2adf2fc89b7d7d8e9364f846bba5f9fad64cec5e4a5db593e56c0b519e",
+    "robust_r3_lr_stability/lr_keys.py": "586049076d5cfc3865842a31ae3fc9e14b890a96d0e5976be9b4e3a7d2c82d6b",
+    "robust_r3_budget_control/bc_models.py": "4f3c5155e21c1bf0dce84661b85935b5f3838b88641691cccf4e0f5eb7fc3f56",
+    "robust_r3_dev/r3_models.py": "cf391002e10af3e785f5e1189ac5999189603840f39f2eeee31abe1732c0799e",
+    "robust_r3_dev/r3_metrics.py": "601795002691fef55c84da447fac1cd47b4da96584349cb6e75605f2a4552a2f",
+    "robust_r3_dev/r3_train.py": "3b5dd6b8e349f877baaec0cb48cfeb444b0e3c2a85d5151b74e1a5d2609f7aa6",
+    "robust_r3_dev/r3_keys.py": "b02bf07e0191039a3885f2bad47475a3d611a8ee4cd13d1f63f8fff3fa04815a"
+  },
+  "python": "3.10.21 (main, Aug 14 2026, 15:33:52) [Clang 22.1.3 ]",
+  "jax_version": "0.4.34",
+  "devices": [
+    "TFRT_CPU_0"
+  ],
+  "platform": "Linux-5.4.0-124-generic-x86_64-with-glibc2.31"
+}
+PASS: test_dry_run_and_confirm_guard
+PASS: test_seed_offset_guard_and_failure_classification
+PASS: test_step_loss_and_policy_grad_parity_synthetic
+ALL 8/8 CONFIRMATORY UNIT TESTS PASSED
+{
+  "mode": "dry_run",
+  "test_sets_4001_4040_status": "NOT_GENERATED_AND_NEVER_OPENED",
+  "hold_eval_status": "SEALED_AND_NEVER_OPENED",
+  "isolation": {
+    "namespace": "R2_MATCHED_CONF_V1",
+    "isolation_passed": true,
+    "historical_keys_checked": 2167,
+    "new_keys_checked": 861,
+    "reserved_conf_seeds": [
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021,
+      4022,
+      4023,
+      4024,
+      4025,
+      4026,
+      4027,
+      4028,
+      4029,
+      4030,
+      4031,
+      4032,
+      4033,
+      4034,
+      4035,
+      4036,
+      4037,
+      4038,
+      4039,
+      4040
+    ],
+    "tech_smoke_seed": 3999,
+    "keys_per_seed": 21,
+    "overflow_errors": [],
+    "internal_collision_count": 0,
+    "historical_collisions": [],
+    "hold_eval_status": "SEALED_AND_NEVER_OPENED"
+  },
+  "spec": {
+    "branches": [
+      "A_DECAY",
+      "R2_DECAY"
+    ],
+    "branch_to_canonical": {
+      "A_DECAY": "A_ref_128",
+      "R2_DECAY": "R2_matched_128"
+    },
+    "training_scenarios": [
+      "fixed_015",
+      "fixed_020",
+      "fixed_025",
+      "rs_015_025"
+    ],
+    "conf_eval_scenarios": [
+      "fixed_015",
+      "fixed_020",
+      "fixed_025",
+      "rs_015_025",
+      "regime_switch_015_028",
+      "fixed_030"
+    ],
+    "primary_scenarios": [
+      "fixed_030",
+      "fixed_020"
+    ],
+    "secondary_scenarios": [
+      "fixed_015",
+      "fixed_025",
+      "rs_015_025",
+      "regime_switch_015_028"
+    ],
+    "train_paths_per_scenario": 5000,
+    "val_paths_per_scenario": 5000,
+    "conf_test_paths_per_scenario": 20000,
+    "budget": {
+      "epochs": 200,
+      "steps_per_epoch": 156,
+      "total_update_steps": 31200,
+      "paths_per_step": 128,
+      "total_processed_paths": 3993600
+    },
+    "optimizer": {
+      "name": "Adam",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-07,
+      "schedule": "constant_then_cosine_decay",
+      "lr_max": 0.001,
+      "lr_min": 0.0001,
+      "t_const_steps": 15600,
+      "t_total_steps": 31200,
+      "lr_step_0": 0.001,
+      "lr_step_15600": 0.001,
+      "lr_step_31200": 0.0001
+    },
+    "environment": {
+      "cost_s_A": 0.0,
+      "cost_s_R2": 0.0,
+      "steps": 20,
+      "normalize_batch_mean": true
+    },
+    "statistical_protocol": {
+      "design": "paired_by_seed_label",
+      "alpha_one_sided": 0.025,
+      "ci_two_sided_level": 0.95,
+      "eps_noninferiority_oce020": 0.0001,
+      "primary_n_seeds": 24,
+      "fallback_n_seeds": 16,
+      "joint_rule": "Berger_IUT (reject H0a at alpha=0.025 AND reject H0b at alpha=0.025)"
+    }
+  },
+  "param_parity": {
+    "A_DECAY": {
+      "policy_dense_params": 6761,
+      "policy_idelta_params": 1,
+      "policy_total_params": 6762,
+      "oce_y_params": 1,
+      "oce_y0_params": 1,
+      "oce_total_params": 2,
+      "grand_total_params": 6764
+    },
+    "R2_DECAY": {
+      "policy_dense_params": 6761,
+      "policy_idelta_params": 1,
+      "policy_total_params": 6762,
+      "oce_y_params": 4,
+      "oce_y0_params": 4,
+      "oce_total_params": 8,
+      "grand_total_params": 6770
+    },
+    "max_policy_init_diff_dummy": 0.0
+  },
+  "source_sha256": {
+    "robust_r2_matched_confirmatory/R2_MATCHED_CONFIRMATORY_DESIGN_LOCK.md": "2595caf85d7f3d6197f2d6279fec36989c46ca93233d2480515e4228b1ac0c89",
+    "robust_r2_matched_confirmatory/SAMPLE_SIZE_SENSITIVITY.csv": "564c441de11a56272aad8e5d004f1d255a5b74558561a6ef6cd620e5cf88949d",
+    "robust_r2_matched_confirmatory/conf_keys.py": "9281e5328a8037af6349a75bfe65d6668fe1cbd24e75c4fc484af05edc835e21",
+    "robust_r2_matched_confirmatory/conf_design.py": "a1e4f1bcda7d6e65a25ce284ec54defc677e98a7bf0be3cf32a5ff6d6c7c54cd",
+    "robust_r2_matched_confirmatory/conf_stats.py": "05f7184378772fd78024a85fde662084ee020afed9d38841a79102ee03fa574b",
+    "robust_r2_matched_confirmatory/conf_run.py": "9374623adfa0533307a9ca988bbecdde24ca342c05b9c2288add37f0404e6c5d",
+    "robust_r2_matched_confirmatory/scripts/sample_size_and_power.py": "e5766e020a0caa07c4a8889c45b2b51ca42033f1225e89338b0eb80b341822b7",
+    "robust_r2_matched_confirmatory/tests/test_conf_suite.py": "6f6dd730edc89534cbd92f739da63ffc11e1c82baf16b925c8c97fa36a98bc21",
+    "robust_r2_matched_confirmatory/DATA_AND_SEED_PLAN.json": "796adea1a6223359e59d54c0110ad30c5c015ecc1c7f310af651bd18a988833c",
+    "robust_r3_lr_stability/lr_train.py": "2759f098522467f5809cb8d00386ab2d6bad16589dcb93cbbc38fc540fcc39f3",
+    "robust_r3_lr_stability/lr_schedule.py": "7d856f2adf2fc89b7d7d8e9364f846bba5f9fad64cec5e4a5db593e56c0b519e",
+    "robust_r3_lr_stability/lr_keys.py": "586049076d5cfc3865842a31ae3fc9e14b890a96d0e5976be9b4e3a7d2c82d6b",
+    "robust_r3_budget_control/bc_models.py": "4f3c5155e21c1bf0dce84661b85935b5f3838b88641691cccf4e0f5eb7fc3f56",
+    "robust_r3_dev/r3_models.py": "cf391002e10af3e785f5e1189ac5999189603840f39f2eeee31abe1732c0799e",
+    "robust_r3_dev/r3_metrics.py": "601795002691fef55c84da447fac1cd47b4da96584349cb6e75605f2a4552a2f",
+    "robust_r3_dev/r3_train.py": "3b5dd6b8e349f877baaec0cb48cfeb444b0e3c2a85d5151b74e1a5d2609f7aa6",
+    "robust_r3_dev/r3_keys.py": "b02bf07e0191039a3885f2bad47475a3d611a8ee4cd13d1f63f8fff3fa04815a"
+  },
+  "python": "3.10.21 (main, Aug 14 2026, 15:33:52) [Clang 22.1.3 ]",
+  "jax_version": "0.4.34",
+  "devices": [
+    "TFRT_CPU_0"
+  ],
+  "platform": "Linux-5.4.0-124-generic-x86_64-with-glibc2.31"
+}
+=== EXECUTING LOCKED CONFIRMATORY RUN (N_SEEDS=24, SEED_OFFSET=0) AT Thu 19 Nov 2026 11:32:35 PM +07 ===
+Completed mode=execute_confirmatory, out_dir=/home/user04/deephedging_jax_training_optimization/experiments/jax_ntbn_7notebooks_original_scale/robust_r2_matched_confirmatory/results/confirmatory_n24, wall=13836.36s
+=== COMPLETED LOCKED CONFIRMATORY RUN AT Fri 20 Nov 2026 03:23:16 AM +07 ===

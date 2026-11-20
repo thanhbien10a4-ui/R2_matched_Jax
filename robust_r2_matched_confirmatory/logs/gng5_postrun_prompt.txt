@@ -1,0 +1,20 @@
+Bối cảnh: Bạn là @gng5 (chạy bằng một phiên mô hình đơn lẻ gemini-4-argon-high). Nhiệm vụ CHỈ ĐỌC (READ-ONLY) của bạn là KIỂM TOÁN HẬU NGHIỆM (POST-HOC AUDIT) cho kết quả thực nghiệm xác nhận độc lập đã chạy xong Slurm Job 16911 (`N = 24`, seeds `[4001..4024]`, `48` lượt) tại:
+`/home/user04/deephedging_jax_training_optimization/experiments/jax_ntbn_7notebooks_original_scale/robust_r2_matched_confirmatory`
+
+CÁC RÀNG BUỘC CỨNG (BẮT BUỘC TUÂN THỦ):
+- KHÔNG tạo, sửa, ghi đè hay xóa bất kỳ tệp nào.
+- KHÔNG nộp Slurm job, KHÔNG chạm vào `[4025..4040]` hay `HOLD_EVAL`.
+- KHÔNG chạm vào `PAUSE_COORDINATOR`.
+
+CÁC TỆP CẦN KIỂM TRA TRỰC TIẾP TRÊN MÁY CHỦ:
+1. `R2_MATCHED_CONFIRMATORY_DESIGN_LOCK.md` & `DESIGN_LOCK_SHA256.json`
+2. `logs/slurm_conf_n24_16911.log` (kiểm tra khớp 17 mã băm SHA-256 trước-chạy/trong-chạy, xác minh không có `sbatch`/tham số nào bị đổi giữa chừng)
+3. `results/confirmatory_n24/SEED_LEDGER.json`, `CONFIRMATORY_STATS_SUMMARY.json`, `PAIRED_CONFIRMATORY.csv`, `RESULTS_CONFIRMATORY_FULL_PRECISION.csv`, `STATS_RECOMPUTED_CLI.json`, `POSTRUN_AUDIT_TABLES.json`, `SECONDARY_SUMMARY_TABLE.csv`
+4. `CONFIRMATORY_FINAL_REPORT.md` (đối chiếu từng số liệu chính & phụ, 24 seed, seed bất lợi `4020`/`4023`/`4009`, vùng bất lợi `fixed_015`, giới hạn `cost_s = 0.0`)
+5. Kiểm tra hiện trạng thư mục `checkpoints/confirmatory_n24/` (`96` `.pkl`), `PAUSE_COORDINATOR` tại `.../experiments/jax_ntbn_7notebooks_original_scale/PAUSE_COORDINATOR`, và việc `HOLD_EVAL` vẫn giữ kín.
+
+YÊU CẦU TRẢ LỜI RÕ RÀNG:
+1. **Phán quyết hậu nghiệm (`PASS` / `CONDITIONAL PASS` / `FAIL` / `REVISE REQUIRED`)**.
+2. **Kiểm toán tính khớp số liệu & tuân thủ khóa thiết kế** (`24/24` seed, SHA-256 trước/sau, `reload_checks`, tái tính độc lập Berger IUT ở `α=0.025` trên `best_val` và `ep200`).
+3. **Đánh giá trung thực các điểm bất lợi và giới hạn** (`4020`/`4023`, `fixed_015`, `cost_s=0.0`).
+4. **Danh sách sai sót/thiếu sót (nếu có)** trong `CONFIRMATORY_FINAL_REPORT.md` hoặc hồ sơ kiểm toán cần đính chính trước khi kết luận cuối cùng.

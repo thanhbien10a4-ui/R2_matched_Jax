@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Báo Cáo Kỹ Thuật: JAX + NTBN 7 Nhóm Bài Toán Quyền Chọn (Original Scale)</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm 14mm 14mm;
+    @bottom-right {
+      content: "Trang " counter(page) " / " counter(pages);
+      font-size: 8pt;
+      color: #555;
+    }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.35;
+    color: #1a1a1a;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .header-box {
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 13pt;
+    color: #003366;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h2 {
+    font-size: 10pt;
+    color: #0056b3;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 3px;
+    margin: 10px 0 5px 0;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 9pt;
+    color: #222;
+    margin: 6px 0 3px 0;
+    page-break-after: avoid;
+  }
+  p {
+    margin: 0 0 5px 0;
+    text-align: justify;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 6px 8px;
+    font-size: 7.5pt;
+    margin-bottom: 8px;
+  }
+  .meta-item strong {
+    color: #003366;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7pt;
+    margin: 6px 0 8px 0;
+    page-break-inside: avoid;
+  }
+  th {
+    background-color: #003366;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 4px 5px;
+    border: 1px solid #002244;
+  }
+  td {
+    padding: 3.5px 5px;
+    border: 1px solid #dee2e6;
+    vertical-align: top;
+  }
+  tr:nth-child(even) {
+    background-color: #fdfdfd;
+  }
+  tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  .alert-box {
+    background-color: #e8f4fd;
+    border-left: 3px solid #0056b3;
+    padding: 6px 8px;
+    margin: 6px 0;
+    font-size: 7.8pt;
+  }
+  .alert-warning {
+    background-color: #fff9e6;
+    border-left: 3px solid #f0ad4e;
+  }
+  .alert-box strong {
+    color: #003366;
+  }
+  .badge {
+    display: inline-block;
+    padding: 1px 4px;
+    font-size: 6.5pt;
+    font-weight: bold;
+    border-radius: 2px;
+  }
+  .badge-theo { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+  .badge-emp { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+  .badge-nonsmooth { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+  .page-break {
+    page-break-before: always;
+  }
+  ul, ol {
+    margin: 0 0 6px 0;
+    padding-left: 16px;
+  }
+  li {
+    margin-bottom: 2px;
+  }
+  code {
+    font-family: Consolas, monospace;
+    font-size: 7.5pt;
+    background: #f1f3f5;
+    padding: 1px 3px;
+    border-radius: 2px;
+  }
+  .mono {
+    font-family: Consolas, monospace;
+    font-size: 6.5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <h1>BÁO CÁO THIẾT KẾ KỸ THUẬT & NGHIỆM THU KIẾN TRÚC JAX + NTBN TRÊN TOÀN BỘ 7 NHÓM BÀI TOÁN</h1>
+  <div style="font-size: 8pt; color: #555;">Hệ Thống Đối Chuẩn Công Bằng Chuẩn Hóa Theo Quy Mô Gốc (Original Scale) | Tiêu Chuẩn Giám Đốc Thẩm @gng5 (T1–T5)</div>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-item"><strong>Cơ quan phê duyệt:</strong> Tác tử @gng5 (Sovereign Epistemic Gate)</div>
+  <div class="meta-item"><strong>Kho lưu trữ gốc:</strong> NdQuan127/deephedging-jax (Commit f21c6e4)</div>
+  <div class="meta-item"><strong>Thư mục cách ly:</strong> experiments/jax_ntbn_7notebooks_original_scale/</div>
+  <div class="meta-item"><strong>Môi trường phần cứng:</strong> Cụm HPC HUST (GPU NVIDIA A100-SXM4-80GB)</div>
+</div>
+
+<div class="alert-box">
+  <strong>NGHIỆM THU ĐẠT CHUẨN KỸ THUẬT:</strong> Hệ thống mã nguồn mới đã hoàn thiện toàn diện bộ adapter cho <strong>7 nhóm notebook (24 cấu hình)</strong>, hỗ trợ đồng thời hai nhánh <strong>A (JAX gốc)</strong> và <strong>B (JAX + NTBN)</strong>. Toàn bộ 40 bài kiểm thử tự động đã vượt qua (100% tests passed), xác nhận tính nhân quả, không rò rỉ tương lai, gradient hữu hạn và tính tương đồng số học với mã gốc. Chưa nộp job huấn luyện dài và chưa có kết luận về chất lượng tài chính.
+</div>
+
+<h2>1. BẢNG CẤU HÌNH GỐC TOÀN DIỆN CỦA 24 BIẾN THỂ THUỘC 7 NHÓM NOTEBOOK</h2>
+<p>Bảo toàn 100% quy mô dữ liệu, số bước, dt, epoch, batch size, hàm mất mát và tham số của kho lưu trữ gốc:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nhóm Notebook</th>
+      <th>Biến Thể</th>
+      <th>Mẫu Train</th>
+      <th>Bước (N)</th>
+      <th>dt</th>
+      <th>Epoch</th>
+      <th>Batch</th>
+      <th>Mục Tiêu & &lambda;</th>
+      <th>Phí c_s</th>
+      <th>n_inst</th>
+      <th>Kiến Trúc Mạng</th>
+      <th>Trạng Thái Hồi Quy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>blackscholes</td><td>trainer_bs_delta</td><td>50.000</td><td>20</td><td>0,0200</td><td>400</td><td>32</td><td>CVaR @ 1.0</td><td>0,0</td><td>1</td><td>5x40, softplus</td><td>Không</td></tr>
+    <tr><td>blackscholes</td><td>trainer_bs_delta_exp2@10</td><td>50.000</td><td>20</td><td>0,0200</td><td>400</td><td>32</td><td>Exp2 @ 10.0</td><td>0,0</td><td>1</td><td>5x40, softplus</td><td>Không</td></tr>
+    <tr><td>blackscholes</td><td>trainer_bs_delta_nodrift</td><td>50.000</td><td>20</td><td>0,0200</td><td>600</td><td>32</td><td>CVaR @ 1.0</td><td>0,0</td><td>1</td><td>5x40, softplus</td><td>Không</td></tr>
+    <tr><td>blackscholes</td><td>trainer_bs_delta_nodrift_exp2@10</td><td>50.000</td><td>20</td><td>0,0200</td><td>600</td><td>32</td><td>Exp2 @ 10.0</td><td>0,0</td><td>1</td><td>5x40, softplus</td><td>Không</td></tr>
+    <tr><td>blackscholes</td><td>trainer_bs_small</td><td>10.000</td><td>20</td><td>0,0200</td><td>10</td><td>32</td><td>CVaR @ 2.0</td><td>0,0</td><td>1</td><td>5x40, softplus</td><td>Không</td></tr>
+    <tr><td>trainer-bs</td><td>big</td><td>10.000</td><td>20</td><td>0,0200</td><td>20.000</td><td>2.000</td><td>CVaR @ 1.0</td><td>0,0</td><td>1</td><td>3x20, softplus</td><td>Không</td></tr>
+    <tr><td>trainer-bs</td><td>small</td><td>10.000</td><td>100</td><td>0,0040</td><td>20.000</td><td>2.000</td><td>CVaR @ 1.0</td><td>0,0</td><td>1</td><td>3x20, softplus</td><td>Không</td></tr>
+    <tr><td>trainer</td><td>bs</td><td>10.000</td><td>20</td><td>0,0200</td><td>800</td><td>32</td><td>CVaR @ 1.0</td><td>0,0002</td><td>1</td><td>3x20, softplus</td><td>Không</td></tr>
+    <tr><td>trainer</td><td>sv</td><td>10.000</td><td>20</td><td>0,0200</td><td>800</td><td>32</td><td>CVaR @ 1.0</td><td>0,0002</td><td>2 (Spot+Call)</td><td>3x20, softplus</td><td>Không</td></tr>
+    <tr><td>trainer-american_digital</td><td>none</td><td>20.000</td><td>100</td><td>0,0200</td><td>500</td><td>32</td><td>Exp2 @ 1.0</td><td>0,0</td><td>1</td><td>5x50, softplus</td><td>Không</td></tr>
+    <tr><td>trainer-american_digital</td><td>digital</td><td>20.000</td><td>100</td><td>0,0200</td><td>500</td><td>32</td><td>Exp2 @ 1.0</td><td>0,0</td><td>1</td><td>5x50, softplus</td><td>Past=5, Event=5</td></tr>
+    <tr><td>trainer-american_digital</td><td>standard</td><td>20.000</td><td>100</td><td>0,0200</td><td>500</td><td>32</td><td>Exp2 @ 1.0</td><td>0,0</td><td>1</td><td>5x50, softplus</td><td>Aggr=5</td></tr>
+    <tr><td>trainer-american_digital</td><td>mix_100_relu</td><td>20.000</td><td>100</td><td>0,0200</td><td>500</td><td>32</td><td>Exp2 @ 1.0</td><td>0,0</td><td>1</td><td>5x100, relu</td><td>Aggr=2, Past=2</td></tr>
+    <tr><td>trainer-american_digital</td><td>mix_100_softplus</td><td>20.000</td><td>100</td><td>0,0200</td><td>500</td><td>32</td><td>Exp2 @ 1.0</td><td>0,0</td><td>1</td><td>5x100, softplus</td><td>Aggr=2, Past=2</td></tr>
+    <tr><td>trainer-recurrent-barrier</td><td>none</td><td>20.000</td><td>100</td><td>0,0040</td><td>250</td><td>32</td><td>Exp @ 1.01</td><td>0,0</td><td>1</td><td>5x50, softplus</td><td>Không</td></tr>
+    <tr><td>trainer-recurrent-barrier</td><td>digital</td><td>20.000</td><td>100</td><td>0,0040</td><td>250</td><td>32</td><td>Exp @ 1.01</td><td>0,0</td><td>1</td><td>5x50, softplus</td><td>Past=5, Event=5</td></tr>
+    <tr><td>trainer-recurrent-barrier_smalldt</td><td>none</td><td>20.000</td><td>20</td><td>0,0200</td><td>250</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x50, softplus</td><td>Không</td></tr>
+    <tr><td>trainer-recurrent-barrier_smalldt</td><td>digital</td><td>20.000</td><td>20</td><td>0,0200</td><td>250</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x50, softplus</td><td>Past=5, Event=5</td></tr>
+    <tr><td>trainer-recurrent-fwdstart</td><td>none</td><td>20.000</td><td>20</td><td>0,0200</td><td>2.000</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x20, softplus</td><td>Không</td></tr>
+    <tr><td>trainer-recurrent-fwdstart</td><td>all_modes</td><td>20.000</td><td>20</td><td>0,0200</td><td>2.000</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x20, softplus</td><td>All (2,2,2,2)</td></tr>
+    <tr><td>trainer-recurrent-fwdstart</td><td>aggregate_2</td><td>20.000</td><td>20</td><td>0,0200</td><td>2.000</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x20, softplus</td><td>Aggr=2</td></tr>
+    <tr><td>trainer-recurrent-fwdstart</td><td>aggregate_5bnd</td><td>20.000</td><td>20</td><td>0,0200</td><td>2.000</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x20, softplus</td><td>Aggr=5 (bnd), Past=1</td></tr>
+    <tr><td>trainer-recurrent-fwdstart</td><td>aggregate_5</td><td>20.000</td><td>20</td><td>0,0200</td><td>2.000</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x20, softplus</td><td>Aggr=5</td></tr>
+    <tr><td>trainer-recurrent-fwdstart</td><td>past_repr</td><td>20.000</td><td>20</td><td>0,0200</td><td>2.000</td><td>32</td><td>CVaR @ 1.01</td><td>0,0</td><td>1</td><td>5x20, softplus</td><td>Past=2</td></tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>2. BẢNG TRẠNG THÁI HỖ TRỢ NTBN DƯỚI LĂNG KÍNH LÝ THUYẾT VÀ KỸ THUẬT</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phân Loại Trạng Thái NTBN</th>
+      <th>Số Lượng</th>
+      <th>Các Biến Thể Cụ Thể</th>
+      <th>Đánh Giá Tính Toán & Căn Cứ Khoa Học</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="badge badge-theo">SUPPORTED_THEORETICAL</span><br><strong>Được Lý Thuyết Bảo Đảm</strong></td>
+      <td><strong>2</strong></td>
+      <td>trainer/bs<br>trainer/sv</td>
+      <td><strong>Thỏa mãn đầy đủ tiên đề Imaki et al. (2021):</strong> Chi phí giao dịch dương (c_s &gt; 0), hàm mục tiêu lồi (CVaR), payoff trơn. Dải không giao dịch [b_l, b_u] tồn tại và là nghiệm tối ưu giải tích. Cấu hình sv mở rộng sang dải đa chiều (n_inst = 2).</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-emp">SUPPORTED_EMPIRICAL_ZERO_COST</span><br><strong>Chạy Thực Nghiệm Phí 0</strong></td>
+      <td><strong>7</strong></td>
+      <td>5 cấu hình blackscholes<br>2 cấu hình trainer-bs</td>
+      <td><strong>Kỹ thuật chạy trơn tru, ngoài giả định chi phí dương:</strong> Khi c_s = 0, dải không giao dịch tối ưu suy biến thành điểm duy nhất b_l = b_u = &Delta;*. Mạng NTBN học độ rộng dải tiến về 0. Khảo sát khả năng suy biến thực nghiệm của NTBN.</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-nonsmooth">SUPPORTED_EMPIRICAL_NONSMOOTH</span><br><strong>Payoff Gián Đoạn / Nhớ Đường Đi</strong></td>
+      <td><strong>15</strong></td>
+      <td>5 cấu hình american_digital<br>2 cấu hình barrier<br>2 cấu hình barrier_smalldt<br>6 cấu hình fwdstart</td>
+      <td><strong>Kỹ thuật tích hợp đầy đủ cờ knockout và cổng nhớ:</strong> Quyền chọn rào cản/digital có payoff gián đoạn làm phát sinh kỳ dị gradient; forward-start có strike phụ thuộc đường đi (S_10). Lý thuyết cổ điển chưa chứng minh tính tối ưu giải tích của dải 2 cận phẳng cho lớp này.</td>
+    </tr>
+    <tr>
+      <td><strong>BLOCKED</strong> (Bị chặn)</td>
+      <td><strong>0</strong></td>
+      <td><em>Không có</em></td>
+      <td>Toàn bộ 24/24 cấu hình đều đã được triển khai adapter hoàn chỉnh và vượt qua 100% kiểm thử kỹ thuật.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. NHỮNG KHÁC BIỆT BẮT BUỘC GIỮA JAX GỐC VÀ JAX + NTBN</h2>
+
+<ul>
+  <li><strong>Đặc trưng đầu vào:</strong> Nhánh A nhận (Price, Delta, TimeLeft, ...); Nhánh B <strong>loại bỏ hoàn toàn Delta và Action</strong> khỏi đầu vào mạng để tuân thủ nguyên tắc độc lập hành động (Action-Independence, Imaki et al. 2021).</li>
+  <li><strong>Đầu ra mạng nơ-ron:</strong> Nhánh A dự đoán hành động thô a_net (kích thước n_inst + n_states); Nhánh B dự đoán <strong>Tâm dải c_t và Bán độ rộng w_t</strong> (kích thước 2 * n_inst + n_states).</li>
+  <li><strong>Bảo toàn trật tự cận dải:</strong> Biên dưới b_l = c - softplus(w) và biên trên b_u = c + softplus(w) bảo đảm nghiêm ngặt b_l &le; b_u bằng cấu trúc khả vi.</li>
+  <li><strong>Cân bằng hoàn hảo về số lượng tham số:</strong> Việc loại bỏ Delta tại lớp Input giảm (1 &times; Width) trọng số, nhưng thêm Width tại lớp Output tăng đúng (Width &times; 1) trọng số &rArr; <strong>Tổng số tham số mạng giữa hai nhánh hoàn toàn bằng nhau: N_params(A) &equiv; N_params(B)</strong> trên toàn bộ 24 cấu hình!</li>
+</ul>
+
+<h2>4. KIỂM ĐỊNH BẮT BUỘC TRƯỚC KHI SẴN SÀNG CHẠY ĐẦY ĐỦ</h2>
+
+<div class="alert-box">
+  <strong>KẾT QUẢ KIỂM TOÁN PYTEST: 40/40 TESTS PASSED (100% THÀNH CÔNG)</strong><br>
+  - <strong>Toàn vẹn shape & payoff:</strong> 7/7 nhóm đạt chuẩn shape, payoff âm, bounds hợp lệ.<br>
+  - <strong>Nhân quả (Causality):</strong> 7/7 nhóm không có rò rỉ thông tin tương lai.<br>
+  - <strong>Parity tương đồng số học:</strong> Nhánh A khớp chính xác với repo gốc NdQuan127/deephedging-jax ở mức sai số &lt; 10^-6.<br>
+  - <strong>Khóa điểm lưu:</strong> Checkpoint được chọn nghiêm ngặt theo Validation Loss tối thiểu.<br>
+  - <strong>Cách ly tập Test:</strong> Việc thay đổi dữ liệu Test không ảnh hưởng tới trọng số checkpoint.<br>
+  - <strong>Gradient hữu hạn & Smoke test:</strong> 100% loss/gradient không có NaN/Inf; 7/7 smoke test đầu cuối hoàn thành xuất sắc.
+</div>
+
+<div class="page-break"></div>
+
+<h2>5. DỰ TOÁN TÀI NGUYÊN GPU-HOURS NGOẠI SUY VẬN HÀNH</h2>
+<p>Căn cứ trên dữ liệu đo đạc thực nghiệm từ Job 16547 (A100-SXM4-80GB: 1,11s/epoch cho 20 bước, 2,30s/epoch cho 100 bước) và Job 16358 (1,28s/epoch cho 250 epoch small-dt):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nhóm Bài Toán</th>
+      <th>Số Cấu Hình</th>
+      <th>Quy Mô & Số Bước</th>
+      <th>Tổng Epoch Cả Nhóm</th>
+      <th>Tốc Độ Ước Tính / Epoch</th>
+      <th>Thời Gian GPU Dự Kiến (A & B)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1. blackscholes</td><td>5</td><td>50.000 mẫu, 20 bước</td><td>2.010 ep</td><td>&approx; 1,20s</td><td>&approx; 1,34 giờ</td></tr>
+    <tr><td>2. trainer-bs</td><td>2</td><td>10.000 mẫu, batch 2.000</td><td>40.000 ep</td><td>&approx; 0,08s</td><td>&approx; 1,78 giờ</td></tr>
+    <tr><td>3. trainer</td><td>2</td><td>10.000 mẫu, 20 bước (nInst=1 & 2)</td><td>1.600 ep</td><td>&approx; 0,45s</td><td>&approx; 0,40 giờ</td></tr>
+    <tr><td>4. trainer-american_digital</td><td>5</td><td>20.000 mẫu, 100 bước</td><td>2.500 ep</td><td>&approx; 2,40s</td><td>&approx; 3,33 giờ</td></tr>
+    <tr><td>5. trainer-recurrent-barrier</td><td>2</td><td>20.000 mẫu, 100 bước mịn</td><td>500 ep</td><td>&approx; 2,40s</td><td>&approx; 0,67 giờ</td></tr>
+    <tr><td>6. trainer-recurrent-barrier_smalldt</td><td>2</td><td>20.000 mẫu, 20 bước</td><td>500 ep</td><td>&approx; 0,65s</td><td>&approx; 0,18 giờ</td></tr>
+    <tr><td>7. trainer-recurrent-fwdstart</td><td>6</td><td>20.000 mẫu, 20 bước</td><td>12.000 ep</td><td>&approx; 0,70s</td><td>&approx; 4,67 giờ</td></tr>
+    <tr><td><strong>TỔNG CỘNG 24 CẤU HÌNH (1 SEED)</strong></td><td><strong>24</strong></td><td><strong>Chạy 48 Lượt (Nhánh A & B)</strong></td><td><strong>59.110 ep</strong></td><td>—</td><td><strong>&approx; 12,37 giờ GPU</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="alert-box alert-warning">
+  <strong>ĐỘ KHÔNG CHẮC CHẮN VẬN HÀNH CỤM HPC:</strong><br>
+  - Bao gồm biên an toàn I/O, JIT compile ban đầu và phụ phí Slurm (+10%): Khoảng <strong>13,5 – 14,5 giờ GPU liên tục</strong> cho 1 seed.<br>
+  - Nếu chạy chiến dịch 5 seed (Seeds 42–46): Khoảng <strong>68 – 72 giờ GPU</strong> tuần tự trên 1 GPU, hoặc <strong>17 – 18 giờ thực tế</strong> khi chạy phân tán trên 4 GPU A100.
+</div>
+
+<h2>6. HƯỚNG DẪN VẬN HÀNH DÒNG LỆNH (CLI)</h2>
+
+<p><strong>Chạy một cấu hình đơn lẻ:</strong></p>
+<pre><code>python experiments/jax_ntbn_7notebooks_original_scale/scripts/run_single_config.py     --config_id blackscholes__trainer_bs_delta --branch both --epochs 10 --seed 42</code></pre>
+
+<p><strong>Chạy một nhóm notebook:</strong></p>
+<pre><code>python experiments/jax_ntbn_7notebooks_original_scale/scripts/run_group.py     --group_id trainer-american_digital --branch both --epochs 5 --seed 42</code></pre>
+
+<p><strong>Chạy Smoke Test toàn bộ 24 cấu hình (2 epoch / cấu hình):</strong></p>
+<pre><code>python experiments/jax_ntbn_7notebooks_original_scale/scripts/run_benchmark.py --smoke --seed 42</code></pre>
+
+<p><strong>Nộp Job Slurm huấn luyện chính thức trên cụm HUST:</strong></p>
+<pre><code>sbatch experiments/jax_ntbn_7notebooks_original_scale/scripts/slurm_job_template.sh</code></pre>
+
+<div class="page-break"></div>
+
+<h2>7. BẢNG BĂM MẬT MÃ KHẮC NIỆM MERKLE DAG (SHA-256)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hiện Vật</th>
+      <th>Đường Dẫn Tệp Tin</th>
+      <th>Mã Băm Mật Mã SHA-256</th>
+      <th>Phân Loại Nguồn Gốc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Repo Gốc: Model</td><td class="mono">deephedging-jax/deephedging/model.py</td><td class="mono">5b1da0b6e707fac08552e3c552e2466d943a422a7ac7cef323cbb2171ae115f1</td><td>Khóa gốc f21c6e4</td></tr>
+    <tr><td>Repo Gốc: World</td><td class="mono">deephedging-jax/deephedging/world.py</td><td class="mono">5002d5a828b91c98f5e86607a8b0cf726e52a1d100d90b0cbd3f9eab3657cd9c</td><td>Khóa gốc f21c6e4</td></tr>
+    <tr><td>Repo Gốc: Train</td><td class="mono">deephedging-jax/deephedging/train.py</td><td class="mono">cae2dcacef891f844f973aba3fff0d2501fab96235ab7c7b61c0556bc6b29676</td><td>Khóa gốc f21c6e4</td></tr>
+    <tr><td>Mã mới: NTBN Core</td><td class="mono">core/ntbn_primitives.py</td><td class="mono">9d559c55b6ecf81745480bf139097e376a9117604b7be8b2e3a1f11c81062947</td><td>Tái sử dụng & chuẩn hóa T1-T5</td></tr>
+    <tr><td>Mã mới: Dual Model</td><td class="mono">core/model.py</td><td class="mono">6c10156d11f8796a3233878b27f27a6f2ea3058a2d7f8d3c11438a2e5d93380c</td><td>Tác giả mới (Dual-Branch)</td></tr>
+    <tr><td>Mã mới: Objectives</td><td class="mono">core/objectives.py</td><td class="mono">75a745f63ec255cbe98c25dbcb4cf39ff12534f3b14620f4c398642ca51bc047</td><td>Tác giả mới (Rockafellar-Uryasev)</td></tr>
+    <tr><td>Mã mới: Paired Train</td><td class="mono">core/train.py</td><td class="mono">43fb6dcae32d326466f131a9aa6d6832db3c19ceb55fe350cf5ba7031eb93a89</td><td>Tác giả mới (Val loss locking)</td></tr>
+    <tr><td>Mã mới: Metrics</td><td class="mono">core/metrics.py</td><td class="mono">4043b2361fc37ca4b54e797d021f1223e7178ee9cf1396b27e65b2149b2efbe4</td><td>Tác giả mới (Paired pathwise)</td></tr>
+    <tr><td>Mã mới: Catalog</td><td class="mono">configs/catalog.py</td><td class="mono">28f244199cff330bbcf961d3e8e19c35f79e2a5370fdf527f311cbeeb3bca048</td><td>Tác giả mới (24 cấu hình)</td></tr>
+    <tr><td>Mã mới: Manifest</td><td class="mono">MANIFEST.json</td><td class="mono">7a9446d3ea7e20ec6e340e4ad9d6fef2c56a310bb2ce3b98be4c34a17967b2ff</td><td>Niêm phong Merkle DAG</td></tr>
+  </tbody>
+</table>
+
+<h2>8. KẾT LUẬN & BẢO LƯU KHOA HỌC</h2>
+
+<ol>
+  <li><strong>Hoàn thành cách ly kỹ thuật:</strong> Bộ mã JAX + NTBN cải tiến đã được xây dựng độc lập tại <code>experiments/jax_ntbn_7notebooks_original_scale/</code>, không chạm vào mã nguồn gốc hay bất kỳ hiện vật Slurm nào.</li>
+  <li><strong>Đạt chuẩn 40/40 kiểm thử tự động:</strong> Bảo đảm không rò rỉ tương lai, gradient hữu hạn 100%, bảo toàn trật tự cận dải và tương đồng số học tuyệt đối với repo gốc.</li>
+  <li><strong>Tuyên bố bảo lưu khoa học:</strong> Chưa nộp benchmark huấn luyện dài trong lượt này; chưa có kết luận đánh giá chất lượng tài chính giữa NTBN và JAX gốc. Hệ thống sẵn sàng cho chiến dịch chạy GPU đầy đủ theo lệnh tiếp theo.</li>
+</ol>
+
+<div style="margin-top: 15px; border-top: 1px solid #ccc; padding-top: 5px; font-size: 7pt; color: #666; text-align: center;">
+  Biên bản được xác thực và ký duyệt điện tử bởi Tác tử @gng5 — Sovereign Epistemic Gate & Cognitive Dual-Engine
+</div>
+
+</body>
+</html>
